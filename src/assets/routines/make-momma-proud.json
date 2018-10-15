@@ -1,0 +1,58 @@
+{
+  "id": "Make momma proud",
+  "name": "Make momma proud",
+  "exercises": [{
+    "id": "Bench press",
+    "name": "Bench press"
+  }, {
+    "id": "Squat",
+    "name": "Squat"
+  }],
+  "weeks": [{
+    "number": 1,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 4,
+        "reps": 5,
+        "percentage": 70
+      }, {
+        "id": "Bench press",
+        "sets": 5,
+        "reps": 5,
+        "percentage": 60
+      }, {
+        "id": "Weighted chin ups",
+        "sets": 5,
+        "reps": 4,
+        "percentage": 100
+      }, {
+        "id": "Barbell overhead press",
+        "sets": 3,
+        "reps": 13,
+        "percentage": 100
+      }, {
+        "id": "Dumbbell rear lateral raises",
+        "sets": 3,
+        "reps": 13,
+        "percentage": 100
+      }, {
+        "id": "Dumbbell upright rows",
+        "sets": 3,
+        "reps": 13,
+        "percentage": 100
+      }, {
+        "id": "Close grip bench",
+        "sets": 5,
+        "reps": 10,
+        "percentage": 100
+      }, {
+        "id": "Barbell curls",
+        "sets": 5,
+        "reps": 10,
+        "percentage": 100
+      }]
+    }]
+  }]
+}

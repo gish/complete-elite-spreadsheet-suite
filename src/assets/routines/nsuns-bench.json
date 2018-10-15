@@ -1,0 +1,139 @@
+{
+  "id": "nSuns three days bench only",
+  "name": "nSuns three days bench only",
+  "exercises": [{
+    "id": "Bench press",
+    "name": "Bench press"
+  }, {
+    "id": "Squat",
+    "name": "Squat"
+  }],
+  "weeks": [{
+    "number": 1,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "reps": 8,
+        "percentage": 65
+      }, {
+        "id": "Bench press",
+        "reps": 6,
+        "percentage": 75
+      }, {
+        "id": "Bench press",
+        "sets": 3,
+        "reps": 4,
+        "percentage": 85
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "reps": 6,
+        "percentage": 75
+      }, {
+        "id": "Bench press",
+        "reps": 7,
+        "percentage": 70
+      }, {
+        "id": "Bench press",
+        "reps": 8,
+        "percentage": 65,
+        "amrap": true
+      }, {
+        "id": "Squat",
+        "sets": 5,
+        "reps": 5,
+        "percentage": 100
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 75
+      }, {
+        "id": "Bench press",
+        "reps": 3,
+        "percentage": 85
+      }, {
+        "id": "Bench press",
+        "reps": 1,
+        "percentage": 95,
+        "amrap": true
+      }, {
+        "id": "Bench press",
+        "reps": 3,
+        "percentage": 90
+      }, {
+        "id": "Bench press",
+        "reps": 3,
+        "percentage": 85
+      }, {
+        "id": "Bench press",
+        "reps": 3,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 75
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 70
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 65,
+        "amrap": true
+      }, {
+        "id": "Squat",
+        "sets": 5,
+        "reps": 5,
+        "percentage": 100
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 42.5
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 52.5
+      }, {
+        "id": "Bench press",
+        "reps": 3,
+        "percentage": 62.5
+      }, {
+        "id": "Bench press",
+        "reps": 5,
+        "percentage": 62.5
+      }, {
+        "id": "Bench press",
+        "reps": 7,
+        "percentage": 62.5
+      }, {
+        "id": "Bench press",
+        "reps": 4,
+        "percentage": 62.5
+      }, {
+        "id": "Bench press",
+        "reps": 6,
+        "percentage": 62.5
+      }, {
+        "id": "Bench press",
+        "reps": 8,
+        "percentage": 62.5
+      }, {
+        "id": "Squat",
+        "reps": 5,
+        "sets": 5,
+        "percentage": 100
+      }]
+    }]
+  }]
+}
