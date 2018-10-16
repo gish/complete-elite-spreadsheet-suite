@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Plan from './Plan';
 import RoutineChooser from './RoutineChooser';
 import routines from '../assets/routines';
@@ -62,24 +63,42 @@ class App extends React.Component {
     );
     const {savedCycles, trainingMaxes} = this.state;
     return (
-      <div>
-        <SavedCyclesLister
-          onChoose={cycle => this.onLoadCycle(cycle)}
-          savedCycles={savedCycles}
-        />
-        <RoutineChooser
-          routines={routines}
-          onChoose={e => this.onRoutineSelect(e)}
-          selectedRoutineId={this.state.selectedRoutineId}
-        />
-        <TrainingMaxSetter
-          maxes={trainingMaxes}
-          onUpdate={maxes => this.onTrainingMaxUpdate(maxes)}
-          key={this.state.selectedRoutineId}
-        />
-        <SaveDialog onSave={event => this.onSaveCycle(event)} />
-        <Plan template={selectedRoutine} maxes={trainingMaxes} />
-      </div>
+      <Router>
+        <div>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <div>
+                <SavedCyclesLister
+                  onChoose={cycle => this.onLoadCycle(cycle)}
+                  savedCycles={savedCycles}
+                />
+                <Link to="/rest">rest</Link>
+              </div>
+            )}
+          />
+          <Route
+            path="/rest"
+            render={() => (
+              <div>
+                <RoutineChooser
+                  routines={routines}
+                  onChoose={e => this.onRoutineSelect(e)}
+                  selectedRoutineId={this.state.selectedRoutineId}
+                />
+                <TrainingMaxSetter
+                  maxes={trainingMaxes}
+                  onUpdate={maxes => this.onTrainingMaxUpdate(maxes)}
+                  key={this.state.selectedRoutineId}
+                />
+                <SaveDialog onSave={event => this.onSaveCycle(event)} />
+                <Plan template={selectedRoutine} maxes={trainingMaxes} />
+              </div>
+            )}
+          />
+        </div>
+      </Router>
     );
   }
 }
