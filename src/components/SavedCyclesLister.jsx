@@ -18,7 +18,7 @@ const SavedCyclesLister = ({savedCycles, onChoose}) => (
 );
 
 SavedCyclesLister.propTypes = {
-  savedCycles: PropTypes.arrayOf(propTypes.savedCycle).isRequired,
+  savedCycles: PropTypes.arrayOf(propTypes.savedCycle.isRequired),
   onChoose: PropTypes.func.isRequired,
 };
 
