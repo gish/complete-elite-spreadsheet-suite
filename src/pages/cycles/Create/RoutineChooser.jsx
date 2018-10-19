@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import propTypes from '../proptypes';
+import propTypes from '../../../proptypes';
 
 const onChange = callback => event => callback(event.target.value);
 
@@ -16,8 +16,8 @@ const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
 
 RoutineChooser.propTypes = {
   routines: PropTypes.arrayOf(propTypes.routine.isRequired),
-  selectedRoutineId: PropTypes.string,
   onChoose: PropTypes.func.isRequired,
+  selectedRoutineId: PropTypes.string.isRequired,
 };
 
 export default RoutineChooser;
