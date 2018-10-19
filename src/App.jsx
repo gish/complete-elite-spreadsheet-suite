@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Index from './pages/Index';
+import {hot} from 'react-hot-loader';
 import cyclesPages from './pages/cycles';
 
 class App extends React.Component {
@@ -15,10 +15,6 @@ class App extends React.Component {
             path="/"
             render={() => (
               <div>
-                <Index
-                  onChoose={() => console.log(arguments)}
-                  savedCycles={savedCycles}
-                />
                 <Link to="cycles/create">Create cycle</Link>
               </div>
             )}
@@ -30,4 +26,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

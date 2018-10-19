@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './src',
+  entry: './src/index.js',
   resolve: {
     extensions: ['.json', '.js', '.jsx'],
   },
@@ -18,8 +19,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     contentBase: './dist',
+    hot: true,
   },
 };

@@ -65,6 +65,7 @@ class Create extends React.Component {
           onUpdate={maxes => this.setState({maxes})}
           key={routineId}
         />
+        Foo
         <button type="submit">Create cycle</button>
       </form>
     );
