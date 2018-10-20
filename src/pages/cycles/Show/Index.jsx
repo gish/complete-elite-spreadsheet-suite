@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import propTypes from '../proptypes';
+import {connect} from 'react-redux';
+import routines from '../../../assets/routines';
+import propTypes from '../../../proptypes';
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 const getWeight = (exercise, trainingMaxes, percentage) => {
@@ -10,10 +12,10 @@ const getWeight = (exercise, trainingMaxes, percentage) => {
   return trainingMax ? mRound((trainingMax.value * percentage) / 100, 2.5) : '';
 };
 
-const Plan = ({maxes, template}) => (
+const Plan = ({maxes, routine}) => (
   <div>
-    <h1>{template.name}</h1>
-    {template.weeks.map(week => (
+    <h1>{routine.name}</h1>
+    {routine.weeks.map(week => (
       <div>
         <h2>Week {week.number}</h2>
         {week.days.map(day => (
@@ -68,7 +70,18 @@ const Plan = ({maxes, template}) => (
 
 Plan.propTypes = {
   maxes: propTypes.trainingMaxes.isRequired,
-  template: propTypes.routine.isRequired,
+  routine: propTypes.routine.isRequired,
 };
 
-export default Plan;
+const mapStateToProps = (state, ownProps) => {
+  const cycleId = ownProps.match.params.id;
+  const cycle = state.cycles.find(cycle => cycle.id === cycleId);
+  const routine = routines.find(routine => cycle.routineId === routine.id);
+  const maxes = cycle.maxes;
+  return {
+    routine,
+    maxes,
+  };
+};
+
+export default connect(mapStateToProps)(Plan);
