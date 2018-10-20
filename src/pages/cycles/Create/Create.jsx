@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {connect} from 'react-redux';
 import propTypes from '../../../proptypes';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
+import * as actions from './../../../state/ducks/cycles/actions';
 
 const getTrainingMaxesByRoutineId = routineId =>
   routines
@@ -27,14 +29,15 @@ class Create extends React.Component {
     };
   }
 
-  change(event) {
+  changeName(event) {
     const name = event.target.value;
     this.setState({name});
   }
 
   onSave(event) {
     event.preventDefault();
-    console.log(this.state);
+    const {routineId, name, maxes} = this.state;
+    this.props.create({routineId, name, maxes});
   }
 
   onChooseRoutine(routineId) {
@@ -52,7 +55,7 @@ class Create extends React.Component {
             type="text"
             required
             value={name}
-            onChange={event => this.change(event)}
+            onChange={event => this.changeName(event)}
           />
         </label>
         <RoutineChooser
@@ -65,7 +68,6 @@ class Create extends React.Component {
           onUpdate={maxes => this.setState({maxes})}
           key={routineId}
         />
-        Foo
         <button type="submit">Create cycle</button>
       </form>
     );
@@ -73,7 +75,14 @@ class Create extends React.Component {
 }
 
 Create.propTypes = {
-  onSave: PropTypes.func.isRequired,
+  create: PropTypes.func.isRequired,
 };
 
-export default Create;
+const mapDispatchToProps = {
+  create: actions.createCycle,
+};
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(Create);
