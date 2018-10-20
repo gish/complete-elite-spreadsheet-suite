@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
-import propTypes from '../../../proptypes';
+import uuidv4 from 'uuid/v4';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
@@ -37,7 +37,8 @@ class Create extends React.Component {
   onSave(event) {
     event.preventDefault();
     const {routineId, name, maxes} = this.state;
-    this.props.create({routineId, name, maxes});
+    const id = uuidv4();
+    this.props.create({id, routineId, name, maxes});
   }
 
   onChooseRoutine(routineId) {

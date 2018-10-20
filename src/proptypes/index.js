@@ -1,7 +1,7 @@
 import routine from './routine';
 import trainingMaxes from './training-maxes';
-import savedCycle from './saved-cycle';
+import cycle from './cycle';
 
-const propTypes = {routine, trainingMaxes, savedCycle};
+const propTypes = {routine, trainingMaxes, cycle};
 
 export default propTypes;
