@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 import routines from '../../../assets/routines';
 import propTypes from '../../../proptypes';
 
@@ -21,16 +26,16 @@ const Plan = ({maxes, routine}) => (
         {week.days.map(day => (
           <div>
             <h3>Day {day.number}</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Exercise</th>
-                  <th>Sets</th>
-                  <th>Reps</th>
-                  <th>Weight</th>
-                </tr>
-              </thead>
-              <tbody>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Exercise</TableCell>
+                  <TableCell>Sets</TableCell>
+                  <TableCell>Reps</TableCell>
+                  <TableCell>Weight</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
                 {day.exercises.map(exercise => {
                   const {
                     id,
@@ -48,19 +53,19 @@ const Plan = ({maxes, routine}) => (
                     : '';
                   const setsCount = exercise.sets || 1;
                   return (
-                    <tr>
-                      <td>{id}</td>
-                      <td>{setsCount}</td>
-                      <td>
+                    <TableRow>
+                      <TableCell>{id}</TableCell>
+                      <TableCell>{setsCount}</TableCell>
+                      <TableCell>
                         {reps}
                         {amrapSign}
-                      </td>
-                      <td>{weight}</td>
-                    </tr>
+                      </TableCell>
+                      <TableCell>{weight}</TableCell>
+                    </TableRow>
                   );
                 })}
-              </tbody>
-            </table>
+              </TableBody>
+            </Table>
           </div>
         ))}
       </div>
