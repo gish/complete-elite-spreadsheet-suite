@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
+import {withStyles} from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -17,7 +18,16 @@ const getWeight = (exercise, trainingMaxes, percentage) => {
   return trainingMax ? mRound((trainingMax.value * percentage) / 100, 2.5) : '';
 };
 
-const Plan = ({maxes, routine}) => (
+const styles = theme => ({
+  table: {maxWidth: 340},
+  row: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.background.default,
+    },
+  },
+});
+
+const Plan = ({maxes, routine, classes}) => (
   <div>
     <h1>{routine.name}</h1>
     {routine.weeks.map(week => (
@@ -26,7 +36,7 @@ const Plan = ({maxes, routine}) => (
         {week.days.map(day => (
           <div>
             <h3>Day {day.number}</h3>
-            <Table>
+            <Table className={classes.table}>
               <TableHead>
                 <TableRow>
                   <TableCell>Exercise</TableCell>
@@ -53,7 +63,7 @@ const Plan = ({maxes, routine}) => (
                     : '';
                   const setsCount = exercise.sets || 1;
                   return (
-                    <TableRow>
+                    <TableRow className={classes.row}>
                       <TableCell>{id}</TableCell>
                       <TableCell>{setsCount}</TableCell>
                       <TableCell>
@@ -89,4 +99,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps)(Plan);
+export default withStyles(styles)(connect(mapStateToProps)(Plan));
