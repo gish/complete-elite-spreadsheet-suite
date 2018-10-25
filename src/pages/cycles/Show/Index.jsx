@@ -40,8 +40,7 @@ const Plan = ({maxes, routine, classes}) => (
               <TableHead>
                 <TableRow>
                   <TableCell>Exercise</TableCell>
-                  <TableCell>Sets</TableCell>
-                  <TableCell>Reps</TableCell>
+                  <TableCell>Sets&times;Reps</TableCell>
                   <TableCell>Weight</TableCell>
                 </TableRow>
               </TableHead>
@@ -65,9 +64,8 @@ const Plan = ({maxes, routine, classes}) => (
                   return (
                     <TableRow className={classes.row}>
                       <TableCell>{id}</TableCell>
-                      <TableCell>{setsCount}</TableCell>
                       <TableCell>
-                        {reps}
+                        {setsCount}&times;{reps}
                         {amrapSign}
                       </TableCell>
                       <TableCell>{weight}</TableCell>
