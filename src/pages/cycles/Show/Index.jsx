@@ -7,6 +7,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import Typography from '@material-ui/core/Typography';
 import routines from '../../../assets/routines';
 import propTypes from '../../../proptypes';
 
@@ -25,17 +26,24 @@ const styles = theme => ({
       backgroundColor: theme.palette.background.default,
     },
   },
+  day: {
+    marginBottom: theme.spacing.unit * 2,
+  },
 });
 
 const Plan = ({maxes, routine, classes}) => (
   <div>
-    <h1>{routine.name}</h1>
+    <Typography variant="h4" gutterBottom>
+      {routine.name}
+    </Typography>
     {routine.weeks.map(week => (
       <div>
-        <h2>Week {week.number}</h2>
+        <Typography variant="h5" gutterBottom>
+          Week {week.number}
+        </Typography>
         {week.days.map(day => (
-          <div>
-            <h3>Day {day.number}</h3>
+          <div className={classes.day}>
+            <Typography variant="h6">Day {day.number}</Typography>
             <Table className={classes.table}>
               <TableHead>
                 <TableRow>
