@@ -6,11 +6,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Paper from '@material-ui/core/Paper';
 import {Routes} from './components';
 
 const styles = theme => ({
-  paper: {
+  container: {
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     paddingLeft: theme.spacing.unit * 2,
@@ -30,9 +29,9 @@ const App = ({classes}) => (
             Workout templates
           </Typography>
         </AppBar>
-        <Paper className={classes.paper}>
+        <div className={classes.container}>
           <Routes />
-        </Paper>
+        </div>
       </Grid>
     </Grid>
   </React.Fragment>
