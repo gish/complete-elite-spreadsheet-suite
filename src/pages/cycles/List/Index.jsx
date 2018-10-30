@@ -13,7 +13,7 @@ const CyclesLister = ({cycles, onChoose}) => (
     <List component="nav">
       {cycles.map(cycle => (
         <ListItem component={Link} to={`/cycles/${cycle.id}`} button>
-          <ListItemText inset primary={cycle.name} />
+          <ListItemText primary={cycle.name} />
         </ListItem>
       ))}
     </List>
