@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 import {hot} from 'react-hot-loader';
 
 import * as cyclesPages from '../pages/cycles';
@@ -13,16 +13,7 @@ class Routes extends React.Component {
     return (
       <Router>
         <div>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <div>
-                <Link to="cycles">Cycles</Link>
-                <Link to="cycles/create">Create cycle</Link>
-              </div>
-            )}
-          />
+          <Route exact path="/" render={() => <Redirect to="/cycles" />} />
           <Route exact path="/cycles" component={cyclesPages.List} />
           <Route exact path="/cycles/create" component={cyclesPages.Create} />
           <Route
