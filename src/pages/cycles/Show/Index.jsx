@@ -31,10 +31,10 @@ const styles = theme => ({
   },
 });
 
-const Plan = ({maxes, routine, classes}) => (
+const Plan = ({name, maxes, routine, classes}) => (
   <div>
     <Typography variant="h4" gutterBottom>
-      {routine.name}
+      {name}
     </Typography>
     {routine.weeks.map(week => (
       <div>
@@ -90,6 +90,7 @@ const Plan = ({maxes, routine, classes}) => (
 );
 
 Plan.propTypes = {
+  name: PropTypes.string.isRequired,
   maxes: propTypes.trainingMaxes.isRequired,
   routine: propTypes.routine.isRequired,
 };
@@ -97,9 +98,10 @@ Plan.propTypes = {
 const mapStateToProps = (state, ownProps) => {
   const cycleId = ownProps.match.params.id;
   const cycle = state.cycles.find(cycle => cycle.id === cycleId);
+  const {name, maxes} = cycle;
   const routine = routines.find(routine => cycle.routineId === routine.id);
-  const maxes = cycle.maxes;
   return {
+    name,
     routine,
     maxes,
   };
