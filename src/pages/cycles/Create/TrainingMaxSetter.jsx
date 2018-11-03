@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
 import propTypes from '../../../proptypes';
 
 class TrainingMaxSetter extends React.Component {
@@ -26,20 +27,18 @@ class TrainingMaxSetter extends React.Component {
   render() {
     const {maxes} = this.state;
     return (
-      <ul>
+      <React.Fragment>
         {maxes.map(max => (
-          <li key={max.id}>
-            <label>
-              {max.name}
-              <input
-                type="number"
-                onChange={this.change(max.id)}
-                value={max.value}
-              />
-            </label>
-          </li>
+          <TextField
+            key={max.id}
+            label={max.name}
+            type="number"
+            onChange={this.change(max.id)}
+            defaultValue={max.value}
+            required
+          />
         ))}
-      </ul>
+      </React.Fragment>
     );
   }
 }

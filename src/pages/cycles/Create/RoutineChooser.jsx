@@ -1,17 +1,19 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 import propTypes from '../../../proptypes';
 
 const onChange = callback => event => callback(event.target.value);
 
 const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
-  <select onChange={onChange(onChoose)} value={selectedRoutineId}>
+  <Select onChange={onChange(onChoose)} value={selectedRoutineId}>
     {routines.map(routine => (
-      <option key={routine.name} value={routine.id}>
+      <MenuItem key={routine.name} value={routine.id}>
         {routine.name}
-      </option>
+      </MenuItem>
     ))};
-  </select>
+  </Select>
 );
 
 RoutineChooser.propTypes = {

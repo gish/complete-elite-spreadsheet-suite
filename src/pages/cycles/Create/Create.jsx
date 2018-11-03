@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
 import uuidv4 from 'uuid/v4';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
@@ -13,7 +15,7 @@ const getTrainingMaxesByRoutineId = routineId =>
     .exercises.map(exercise => ({
       id: exercise.id,
       name: exercise.name,
-      value: 110,
+      value: 0,
     }));
 
 class Create extends React.Component {
@@ -50,15 +52,13 @@ class Create extends React.Component {
     const {maxes, name, routineId} = this.state;
     return (
       <form onSubmit={event => this.onSave(event)}>
-        <label>
-          Cycle name
-          <input
-            type="text"
-            required
-            value={name}
-            onChange={event => this.changeName(event)}
-          />
-        </label>
+        <TextField
+          label="Cycle name"
+          type="text"
+          value={name}
+          onChange={event => this.changeName(event)}
+          required
+        />
         <RoutineChooser
           routines={routines}
           selectedRoutineId={routineId}
@@ -69,7 +69,9 @@ class Create extends React.Component {
           onUpdate={maxes => this.setState({maxes})}
           key={routineId}
         />
-        <button type="submit">Create cycle</button>
+        <Button type="submit" variant="contained" color="secondary">
+          Create cycle
+        </Button>
       </form>
     );
   }
