@@ -13,7 +13,7 @@ import propTypes from '../../../proptypes';
 
 const styles = theme => ({
   createButton: {
-    position: 'absolute',
+    position: 'fixed',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 2,
   },
