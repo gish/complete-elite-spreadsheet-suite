@@ -41,6 +41,7 @@ class Create extends React.Component {
     const {routineId, name, maxes} = this.state;
     const id = uuidv4();
     this.props.create({id, routineId, name, maxes});
+    this.props.history.push(`/cycles/${id}`);
   }
 
   onChooseRoutine(routineId) {
