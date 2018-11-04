@@ -26,7 +26,11 @@ const CyclesLister = ({cycles, onChoose, classes}) => (
     </Typography>
     <List component="nav">
       {cycles.map(cycle => (
-        <ListItem component={Link} to={`/cycles/${cycle.id}`} button>
+        <ListItem
+          component={Link}
+          to={`/cycles/${cycle.id}`}
+          button
+          key={cycle.id}>
           <ListItemText primary={cycle.name} />
         </ListItem>
       ))}
