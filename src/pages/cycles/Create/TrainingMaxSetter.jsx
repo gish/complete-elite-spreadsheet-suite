@@ -35,6 +35,8 @@ class TrainingMaxSetter extends React.Component {
             type="number"
             onChange={this.change(max.id)}
             defaultValue={max.value}
+            margin="dense"
+            fullWidth
             required
           />
         ))}

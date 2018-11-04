@@ -7,7 +7,7 @@ import propTypes from '../../../proptypes';
 const onChange = callback => event => callback(event.target.value);
 
 const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
-  <Select onChange={onChange(onChoose)} value={selectedRoutineId}>
+  <Select onChange={onChange(onChoose)} value={selectedRoutineId} fullWidth>
     {routines.map(routine => (
       <MenuItem key={routine.name} value={routine.id}>
         {routine.name}

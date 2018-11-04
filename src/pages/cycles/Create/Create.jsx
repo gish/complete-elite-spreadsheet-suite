@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
 import uuidv4 from 'uuid/v4';
+import {Link} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import withStyles from '@material-ui/core/styles/withStyles';
+import Typography from '@material-ui/core/Typography';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
@@ -17,6 +20,27 @@ const getTrainingMaxesByRoutineId = routineId =>
       name: exercise.name,
       value: 0,
     }));
+
+const styles = theme => ({
+  layout: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  fieldWrapper: {
+    marginBottom: theme.spacing.unit * 2,
+  },
+  buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+});
 
 class Create extends React.Component {
   constructor(props) {
@@ -51,29 +75,52 @@ class Create extends React.Component {
 
   render() {
     const {maxes, name, routineId} = this.state;
+    const {classes} = this.props;
     return (
-      <form onSubmit={event => this.onSave(event)}>
-        <TextField
-          label="Cycle name"
-          type="text"
-          value={name}
-          onChange={event => this.changeName(event)}
-          required
-        />
-        <RoutineChooser
-          routines={routines}
-          selectedRoutineId={routineId}
-          onChoose={routineId => this.onChooseRoutine(routineId)}
-        />
-        <TrainingMaxSetter
-          maxes={maxes}
-          onUpdate={maxes => this.setState({maxes})}
-          key={routineId}
-        />
-        <Button type="submit" variant="contained" color="secondary">
+      <div className={classes.layout}>
+        <Typography variant="h4" gutterBottom>
           Create cycle
-        </Button>
-      </form>
+        </Typography>
+        <form onSubmit={event => this.onSave(event)}>
+          <div className={classes.fieldWrapper}>
+            <TextField
+              label="Cycle name"
+              type="text"
+              value={name}
+              onChange={event => this.changeName(event)}
+              fullWidth
+              required
+            />
+          </div>
+          <div className={classes.fieldWrapper}>
+            <RoutineChooser
+              routines={routines}
+              selectedRoutineId={routineId}
+              onChoose={routineId => this.onChooseRoutine(routineId)}
+            />
+          </div>
+          <div className={classes.fieldWrapper}>
+            <Typography variant="h5">Training maxes</Typography>
+            <TrainingMaxSetter
+              maxes={maxes}
+              onUpdate={maxes => this.setState({maxes})}
+              key={routineId}
+            />
+          </div>
+          <div className={classes.buttonWrapper}>
+            <Button
+              component={Link}
+              to={`/cycles`}
+              variant="contained"
+              color="default">
+              Cancel
+            </Button>
+            <Button type="submit" variant="contained" color="secondary">
+              Create cycle
+            </Button>
+          </div>
+        </form>
+      </div>
     );
   }
 }
@@ -86,7 +133,9 @@ const mapDispatchToProps = {
   create: actions.createCycle,
 };
 
-export default connect(
-  null,
-  mapDispatchToProps,
-)(Create);
+export default withStyles(styles)(
+  connect(
+    null,
+    mapDispatchToProps,
+  )(Create),
+);
