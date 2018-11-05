@@ -1,0 +1,159 @@
+{
+  "id": "2575dedd-584d-4bd9-99e1-c71786a50744",
+  "name": "Russian squat routine",
+  "exercises": [{
+    "id": "Squat",
+    "name": "Squat"
+  }],
+  "weeks": [{
+    "number": 1,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 3,
+        "percentage": 80
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]
+    }]
+  }, {
+    "number": 2,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 4,
+        "percentage": 80
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 5,
+        "percentage": 80
+      }]
+    }]
+  }, {
+    "number": 3,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 6,
+        "percentage": 80
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]
+    }]
+  }, {
+    "number": 4,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 5,
+        "reps": 5,
+        "percentage": 85
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 6,
+        "percentage": 80
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 4,
+        "reps": 4,
+        "percentage": 90
+      }]
+    }]
+  }, {
+    "number": 5,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 3,
+        "reps": 3,
+        "percentage": 95
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]
+    }]
+  }, {
+    "number": 6,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 100
+      }]}, {
+      "number": 2,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 80
+      }]}, {
+      "number": 3,
+      "exercises": [{
+        "id": "Squat",
+        "sets": 1,
+        "reps": 1,
+        "percentage": 105
+      }]
+    }]
+  }]
+}
