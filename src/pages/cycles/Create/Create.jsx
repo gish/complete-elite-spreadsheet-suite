@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
+import Modal from '@material-ui/core/Modal';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
@@ -25,8 +26,16 @@ const styles = theme => ({
   layout: {
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing.unit * 4,
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    position: 'absolute',
+    width: '90%',
+    margin: 0,
+
     [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
       width: 400,
       marginLeft: 'auto',
@@ -133,9 +142,17 @@ const mapDispatchToProps = {
   create: actions.createCycle,
 };
 
-export default withStyles(styles)(
+const EnhancedCreate = withStyles(styles)(
   connect(
     null,
     mapDispatchToProps,
   )(Create),
 );
+
+const CreateModal = props => (
+  <Modal open>
+    <EnhancedCreate {...props} />
+  </Modal>
+);
+
+export default CreateModal;

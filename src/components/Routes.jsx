@@ -14,7 +14,11 @@ class Routes extends React.Component {
       <Router>
         <div>
           <Route exact path="/" render={() => <Redirect to="/cycles" />} />
-          <Route exact path="/cycles" component={cyclesPages.List} />
+          <Route
+            exact
+            path={['/cycles', '/cycles/create']}
+            component={cyclesPages.List}
+          />
           <Route exact path="/cycles/create" component={cyclesPages.Create} />
           <Route
             exact
