@@ -8,7 +8,7 @@ const onChange = callback => event => callback(event.target.value);
 
 const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
   <Select onChange={onChange(onChoose)} value={selectedRoutineId} fullWidth>
-    {routines.map(routine => (
+    {routines.sort((a, b) => a.name.localeCompare(b.name)).map(routine => (
       <MenuItem key={routine.name} value={routine.id}>
         {routine.name}
       </MenuItem>
