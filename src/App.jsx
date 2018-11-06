@@ -26,7 +26,7 @@ const App = ({classes}) => (
       <Grid item xs={12}>
         <AppBar position="static">
           <Typography variant="h6" color="inherit" gutterBottom>
-            Workout templates
+            Complete Elite Sweet Spreadsheet Suite
           </Typography>
         </AppBar>
         <div className={classes.container}>
