@@ -6,6 +6,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Toolbar from '@material-ui/core/Toolbar';
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 import {Routes} from './components';
 
 const styles = theme => ({
@@ -17,6 +20,9 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
   },
+  menuButton: {
+    marginRight: 20,
+  },
 });
 
 const App = ({classes}) => (
@@ -25,9 +31,15 @@ const App = ({classes}) => (
     <Grid container spacing={24}>
       <Grid item xs={12}>
         <AppBar position="static">
-          <Typography variant="h6" color="inherit" gutterBottom>
-            Complete Elite Sweet Spreadsheet Suite
-          </Typography>
+          <Toolbar>
+            <IconButton color="inherit" className={classes.menuButton}>
+              <MenuIcon />
+            </IconButton>
+
+            <Typography variant="h6" color="inherit">
+              Complete Elite Sweet Spreadsheet Suite
+            </Typography>
+          </Toolbar>
         </AppBar>
         <div className={classes.container}>
           <Routes />
