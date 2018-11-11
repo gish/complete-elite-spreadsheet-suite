@@ -117,11 +117,7 @@ class Create extends React.Component {
             />
           </div>
           <div className={classes.buttonWrapper}>
-            <Button
-              component={Link}
-              to={`/cycles`}
-              variant="contained"
-              color="default">
+            <Button component={Link} to={`/cycles`} color="default">
               Cancel
             </Button>
             <Button type="submit" variant="contained" color="secondary">
