@@ -22,6 +22,11 @@ const styles = theme => ({
   menuButton: {
     marginRight: 20,
   },
+  title: {
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+  },
 });
 
 const App = ({classes}) => (
@@ -32,7 +37,7 @@ const App = ({classes}) => (
         <IconButton color="inherit" className={classes.menuButton}>
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" color="inherit">
+        <Typography variant="h6" color="inherit" className={classes.title}>
           Complete Elite Sweet Spreadsheet Suite
         </Typography>
       </Toolbar>
