@@ -8,6 +8,10 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import routines from '../../../assets/routines';
 import propTypes from '../../../proptypes';
 
@@ -37,54 +41,61 @@ const Plan = ({name, maxes, routine, classes}) => (
       {name}
     </Typography>
     {routine.weeks.map(week => (
-      <div>
-        <Typography variant="h5" gutterBottom>
-          Week {week.number}
-        </Typography>
-        {week.days.map(day => (
-          <div className={classes.day}>
-            <Typography variant="h6">Day {day.number}</Typography>
-            <Table className={classes.table}>
-              <TableHead>
-                <TableRow>
-                  <TableCell>Exercise</TableCell>
-                  <TableCell>Sets&times;Reps</TableCell>
-                  <TableCell>Weight</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {day.exercises.map(exercise => {
-                  const {
-                    id,
-                    name,
-                    sets,
-                    reps,
-                    percentage,
-                    amrap,
-                    comments,
-                  } = exercise;
-                  const weight = getWeight(exercise, maxes, percentage);
-                  const amrapSign = amrap ? '+' : '';
-                  const prettyComments = comments
-                    ? ' ' + comments.join(', ')
-                    : '';
-                  const setsCount = exercise.sets || 1;
-                  return (
-                    <TableRow className={classes.row}>
-                      <TableCell>{id}</TableCell>
-                      <TableCell>
-                        {setsCount}&times;{reps}
-                        {amrapSign}
-                      </TableCell>
-                      <TableCell>{weight}</TableCell>
+      <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="h5" gutterBottom>
+            Week {week.number}
+          </Typography>
+        </ExpansionPanelSummary>
+
+        <ExpansionPanelDetails>
+          <div>
+            {week.days.map(day => (
+              <div className={classes.day}>
+                <Typography variant="h6">Day {day.number}</Typography>
+                <Table className={classes.table}>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Exercise</TableCell>
+                      <TableCell>Sets&times;Reps</TableCell>
+                      <TableCell>Weight</TableCell>
                     </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table>
+                  </TableHead>
+                  <TableBody>
+                    {day.exercises.map(exercise => {
+                      const {
+                        id,
+                        name,
+                        sets,
+                        reps,
+                        percentage,
+                        amrap,
+                        comments,
+                      } = exercise;
+                      const weight = getWeight(exercise, maxes, percentage);
+                      const amrapSign = amrap ? '+' : '';
+                      const prettyComments = comments
+                        ? ' ' + comments.join(', ')
+                        : '';
+                      const setsCount = exercise.sets || 1;
+                      return (
+                        <TableRow className={classes.row}>
+                          <TableCell>{id}</TableCell>
+                          <TableCell>
+                            {setsCount}&times;{reps}
+                            {amrapSign}
+                          </TableCell>
+                          <TableCell>{weight}</TableCell>
+                        </TableRow>
+                      );
+                    })}
+                  </TableBody>
+                </Table>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
     ))}
   </div>
 );
