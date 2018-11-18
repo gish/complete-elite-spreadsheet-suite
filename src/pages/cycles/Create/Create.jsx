@@ -13,14 +13,15 @@ import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
 import * as actions from './../../../state/ducks/cycles/actions';
 
+const getRoutineById = routineId =>
+  routines.find(routine => routine.id === routineId);
+
 const getTrainingMaxesByRoutineId = routineId =>
-  routines
-    .find(routine => routine.id === routineId)
-    .exercises.map(exercise => ({
-      id: exercise.id,
-      name: exercise.name,
-      value: 0,
-    }));
+  getRoutineById(routineId).exercises.map(exercise => ({
+    id: exercise.id,
+    name: exercise.name,
+    value: 0,
+  }));
 
 const styles = theme => ({
   layout: {
@@ -55,12 +56,11 @@ class Create extends React.Component {
   constructor(props) {
     super(props);
     const routine = routines[0];
-    const routineId = routine.id;
-    const maxes = getTrainingMaxesByRoutineId(routineId);
+    const maxes = getTrainingMaxesByRoutineId(routine.id);
     this.state = {
       name: '',
       maxes,
-      routineId,
+      routine,
     };
   }
 
@@ -71,19 +71,20 @@ class Create extends React.Component {
 
   onSave(event) {
     event.preventDefault();
-    const {routineId, name, maxes} = this.state;
+    const {routine, name, maxes} = this.state;
     const id = uuidv4();
-    this.props.create({id, routineId, name, maxes});
+    this.props.create({id, routine, name, maxes});
     this.props.history.push(`/cycles/${id}`);
   }
 
   onChooseRoutine(routineId) {
     const maxes = getTrainingMaxesByRoutineId(routineId);
-    this.setState({routineId, maxes});
+    const routine = getRoutineById(routineId);
+    this.setState({routine, maxes});
   }
 
   render() {
-    const {maxes, name, routineId} = this.state;
+    const {maxes, name, routine} = this.state;
     const {classes} = this.props;
     return (
       <div className={classes.layout}>
@@ -104,7 +105,7 @@ class Create extends React.Component {
           <div className={classes.fieldWrapper}>
             <RoutineChooser
               routines={routines}
-              selectedRoutineId={routineId}
+              selectedRoutineId={routine.id}
               onChoose={routineId => this.onChooseRoutine(routineId)}
             />
           </div>
@@ -113,7 +114,7 @@ class Create extends React.Component {
             <TrainingMaxSetter
               maxes={maxes}
               onUpdate={maxes => this.setState({maxes})}
-              key={routineId}
+              key={routine.id}
             />
           </div>
           <div className={classes.buttonWrapper}>

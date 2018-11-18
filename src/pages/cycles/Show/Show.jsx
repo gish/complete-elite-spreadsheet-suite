@@ -109,8 +109,7 @@ Plan.propTypes = {
 const mapStateToProps = (state, ownProps) => {
   const cycleId = ownProps.match.params.id;
   const cycle = state.cycles.find(cycle => cycle.id === cycleId);
-  const {name, maxes} = cycle;
-  const routine = routines.find(routine => cycle.routineId === routine.id);
+  const {name, maxes, routine} = cycle;
   return {
     name,
     routine,
