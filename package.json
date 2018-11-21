@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "npm run build",
-    "start": "webpack-dev-server --open --mode=development --hot",
-    "build": "webpack --mode=production --config webpack.config.production.js"
+    "start": "webpack-dev-server --open --config webpack.dev.js --mode=development --hot",
+    "build": "webpack --mode=production --config webpack.prod.js"
   },
   "babel": {
     "plugins": [
@@ -36,7 +36,8 @@
     "uuid": "^3.3.2",
     "webpack": "^4.10.0",
     "webpack-cli": "^2.1.4",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {}
 }
