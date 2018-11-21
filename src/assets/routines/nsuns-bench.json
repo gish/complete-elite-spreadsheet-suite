@@ -42,11 +42,6 @@
         "reps": 8,
         "percentage": 65,
         "amrap": true
-      }, {
-        "id": "Squat",
-        "sets": 5,
-        "reps": 5,
-        "percentage": 100
       }]
     }, {
       "number": 2,
@@ -88,11 +83,6 @@
         "reps": 5,
         "percentage": 65,
         "amrap": true
-      }, {
-        "id": "Squat",
-        "sets": 5,
-        "reps": 5,
-        "percentage": 100
       }]
     }, {
       "number": 3,
@@ -128,11 +118,6 @@
         "id": "Bench press",
         "reps": 8,
         "percentage": 62.5
-      }, {
-        "id": "Squat",
-        "reps": 5,
-        "sets": 5,
-        "percentage": 100
       }]
     }]
   }]
