@@ -5,7 +5,7 @@ import russianSquatRoutine from './russian-squat-routine.json';
 
 const routines = [
   russianSquatRoutine,
-  fiveThreeOne,
+  //  fiveThreeOne,
   nsunsBench,
   makeMommaProud,
 ];
