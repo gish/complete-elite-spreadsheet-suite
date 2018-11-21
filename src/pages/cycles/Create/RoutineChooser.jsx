@@ -6,8 +6,12 @@ import propTypes from '../../../proptypes';
 
 const onChange = callback => event => callback(event.target.value);
 
-const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
-  <Select onChange={onChange(onChoose)} value={selectedRoutineId} fullWidth>
+const RoutineChooser = ({routines, onChoose, selectedRoutineIds}) => (
+  <Select
+    multiple
+    onChange={onChange(onChoose)}
+    value={selectedRoutineIds}
+    fullWidth>
     {routines.sort((a, b) => a.name.localeCompare(b.name)).map(routine => (
       <MenuItem key={routine.name} value={routine.id}>
         {routine.name}
@@ -19,7 +23,7 @@ const RoutineChooser = ({routines, onChoose, selectedRoutineId}) => (
 RoutineChooser.propTypes = {
   routines: PropTypes.arrayOf(propTypes.routine.isRequired),
   onChoose: PropTypes.func.isRequired,
-  selectedRoutineId: PropTypes.string.isRequired,
+  selectedRoutineIds: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default RoutineChooser;

@@ -1,4 +1,4 @@
-import R from 'ramda';
+const R = require('ramda');
 
 const getNumber = prop =>
   R.pipe(

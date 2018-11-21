@@ -12,12 +12,13 @@ import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import routines from '../../../assets/routines';
 import * as actions from './../../../state/ducks/cycles/actions';
+import mergeRoutines from './../../../utils/merge-routines';
 
 const getRoutineById = routineId =>
   routines.find(routine => routine.id === routineId);
 
-const getTrainingMaxesByRoutineId = routineId =>
-  getRoutineById(routineId).exercises.map(exercise => ({
+const getTrainingMaxesByRoutine = routine =>
+  routine.exercises.map(exercise => ({
     id: exercise.id,
     name: exercise.name,
     value: 0,
@@ -55,12 +56,14 @@ const styles = theme => ({
 class Create extends React.Component {
   constructor(props) {
     super(props);
-    const routine = routines[0];
-    const maxes = getTrainingMaxesByRoutineId(routine.id);
+    const selectedRoutineIds = [];
+    const maxes = [];
+    const mergedRoutines = {};
     this.state = {
       name: '',
       maxes,
-      routine,
+      selectedRoutineIds,
+      mergedRoutines,
     };
   }
 
@@ -71,20 +74,22 @@ class Create extends React.Component {
 
   onSave(event) {
     event.preventDefault();
-    const {routine, name, maxes} = this.state;
+    const {mergedRoutines, name, maxes} = this.state;
     const id = uuidv4();
-    this.props.create({id, routine, name, maxes});
+    this.props.create({id, routine: mergedRoutines, name, maxes});
     this.props.history.push(`/cycles/${id}`);
   }
 
-  onChooseRoutine(routineId) {
-    const maxes = getTrainingMaxesByRoutineId(routineId);
-    const routine = getRoutineById(routineId);
-    this.setState({routine, maxes});
+  onChooseRoutines(selectedRoutineIds) {
+    const mergedRoutines = mergeRoutines(
+      selectedRoutineIds.map(getRoutineById),
+    );
+    const maxes = getTrainingMaxesByRoutine(mergedRoutines);
+    this.setState({selectedRoutineIds, mergedRoutines, maxes});
   }
 
   render() {
-    const {maxes, name, routine} = this.state;
+    const {maxes, name, selectedRoutineIds} = this.state;
     const {classes} = this.props;
     return (
       <div className={classes.layout}>
@@ -105,8 +110,8 @@ class Create extends React.Component {
           <div className={classes.fieldWrapper}>
             <RoutineChooser
               routines={routines}
-              selectedRoutineId={routine.id}
-              onChoose={routineId => this.onChooseRoutine(routineId)}
+              selectedRoutineIds={selectedRoutineIds}
+              onChoose={routineIds => this.onChooseRoutines(routineIds)}
             />
           </div>
           <div className={classes.fieldWrapper}>
@@ -114,7 +119,7 @@ class Create extends React.Component {
             <TrainingMaxSetter
               maxes={maxes}
               onUpdate={maxes => this.setState({maxes})}
-              key={routine.id}
+              key={selectedRoutineIds}
             />
           </div>
           <div className={classes.buttonWrapper}>
