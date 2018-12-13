@@ -24,7 +24,6 @@ const getWeight = (exercise, trainingMaxes, percentage) => {
 };
 
 const styles = theme => ({
-  table: {maxWidth: 340},
   row: {
     '&:nth-of-type(odd)': {
       backgroundColor: theme.palette.background.default,
@@ -59,6 +58,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                       <TableCell>Exercise</TableCell>
                       <TableCell>Sets&times;Reps</TableCell>
                       <TableCell>Weight</TableCell>
+                      <TableCell />
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -86,6 +86,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                             {amrapSign}
                           </TableCell>
                           <TableCell>{weight}</TableCell>
+                          <TableCell>{prettyComments}</TableCell>
                         </TableRow>
                       );
                     })}
