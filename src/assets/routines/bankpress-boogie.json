@@ -1,0 +1,623 @@
+{
+  "id": "d954ef04-6c06-4df3-8714-bcf3041d2a78",
+  "name": "Bänkpress boogie v1",
+  "exercises": [{
+    "id": "Bench press",
+    "name": "Bench press"
+  }],
+  "weeks": [{
+    "number": 1,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 6,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 8
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 77
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "French press",
+        "sets": 4,
+        "reps": 10
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 1,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 5,
+        "reps": 8
+      }]
+    }]
+  }, {
+    "number": 2,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 8,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 10
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 77
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "French press",
+        "sets": 5,
+        "reps": 10
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 58
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 68
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 78
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 5,
+        "reps": 10
+      }]
+    }]
+  }, {
+    "number": 3,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 10,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 12
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 77
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "French press",
+        "sets": 5,
+        "reps": 12
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 1,
+        "percentage": 93
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 5,
+        "reps": 12
+      }]
+    }]
+  }, {
+    "number": 4,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 58
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 68
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 78
+      }, {
+        "id": "Bench press",
+        "sets": 4,
+        "reps": 1,
+        "percentage": 88
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 12
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 77
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 80
+      }, {
+        "id": "Bench press",
+        "sets": 2,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "French press",
+        "sets": 3,
+        "reps": 10
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 3,
+        "reps": 1,
+        "percentage": 93
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 3,
+        "reps": 12
+      }]
+    }]
+  }, {
+    "number": 5,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 58
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 68
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 78
+      }, {
+        "id": "Bench press",
+        "sets": 6,
+        "reps": 1,
+        "percentage": 88
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 10
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 4,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "French press",
+        "sets": 4,
+        "reps": 10
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 6,
+        "reps": 1,
+        "percentage": 93
+      }, {
+        "id": "Dumbbell flyes",
+        "sets": 4,
+        "reps": 12
+      }]
+    }]
+  }, {
+    "number": 6,
+    "days": [{
+      "number": 1,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 58
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 68
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 78
+      }, {
+        "id": "Bench press",
+        "sets": 4,
+        "reps": 2,
+        "percentage": 88
+      }]
+    }, {
+      "number": 2,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 53
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 63
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 73
+      }, {
+        "id": "Bench press",
+        "sets": 4,
+        "reps": 2,
+        "percentage": 83
+      }]
+    }, {
+      "number": 3,
+      "exercises": [{
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 5,
+        "percentage": 58
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 4,
+        "percentage": 68
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 3,
+        "percentage": 78
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 83
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 2,
+        "percentage": 88
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 1,
+        "percentage": 93
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 1,
+        "percentage": 98
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 1,
+        "percentage": 102.5,
+        "comments": ["New 1RM attempt"]
+      }, {
+        "id": "Bench press",
+        "sets": 1,
+        "reps": 1,
+        "percentage": 85,
+        "amrap": "true"
+      }]
+    }]
+  }]
+}
