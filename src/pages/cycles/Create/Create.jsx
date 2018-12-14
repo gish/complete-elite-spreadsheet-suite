@@ -10,11 +10,11 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
-import routines from '../../../assets/routines';
 import * as actions from './../../../state/ducks/cycles/actions';
+import selectRoutines from './../../../state/ducks/routines/selectors';
 import mergeRoutines from './../../../utils/merge-routines';
 
-const getRoutineById = routineId =>
+const getRoutineById = routines => routineId =>
   routines.find(routine => routine.id === routineId);
 
 const getTrainingMaxesByRoutine = routine =>
@@ -81,8 +81,9 @@ class Create extends React.Component {
   }
 
   onChooseRoutines(selectedRoutineIds) {
+    const {routines} = this.props;
     const mergedRoutines = mergeRoutines(
-      selectedRoutineIds.map(getRoutineById),
+      selectedRoutineIds.map(getRoutineById(routines)),
     );
     const maxes = getTrainingMaxesByRoutine(mergedRoutines);
     this.setState({selectedRoutineIds, mergedRoutines, maxes});
@@ -90,7 +91,7 @@ class Create extends React.Component {
 
   render() {
     const {maxes, name, selectedRoutineIds} = this.state;
-    const {classes} = this.props;
+    const {classes, routines} = this.props;
     return (
       <div className={classes.layout}>
         <Typography variant="h4" gutterBottom>
@@ -140,13 +141,15 @@ Create.propTypes = {
   create: PropTypes.func.isRequired,
 };
 
+const mapStateToProps = state => ({routines: selectRoutines(state)});
+
 const mapDispatchToProps = {
   create: actions.createCycle,
 };
 
 const EnhancedCreate = withStyles(styles)(
   connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps,
   )(Create),
 );

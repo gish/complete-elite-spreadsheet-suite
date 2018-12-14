@@ -1,6 +1,13 @@
+const fs = require('fs');
+const R = require('ramda');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
+const ROUTINE_PATH = './src/assets/routines';
+const ROUTINES = R.pipe(
+  R.filter(name => name.substr(-4, 4) === 'json'),
+  R.map(file => require(`${ROUTINE_PATH}/${file}`)),
+)(fs.readdirSync(ROUTINE_PATH));
 module.exports = {
   entry: './src/index.js',
   resolve: {
@@ -18,6 +25,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+    }),
+    new webpack.DefinePlugin({
+      __ROUTINES__: JSON.stringify(ROUTINES),
     }),
   ],
   devServer: {

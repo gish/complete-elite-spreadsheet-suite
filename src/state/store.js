@@ -4,10 +4,11 @@ import {storage} from './utils';
 import {stateSaver} from './middlewares';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const initialState = storage.get();
+const initialState = routines => ({...storage.get(), routines});
 
-export default createStore(
-  combineReducers(reducers),
-  initialState,
-  composeEnhancers(applyMiddleware(stateSaver)),
-);
+export default routines =>
+  createStore(
+    combineReducers(reducers),
+    initialState(routines),
+    composeEnhancers(applyMiddleware(stateSaver)),
+  );
