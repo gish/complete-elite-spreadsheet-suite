@@ -8,10 +8,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import propTypes from '../../../proptypes';
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
@@ -30,6 +26,7 @@ const styles = theme => ({
   },
   day: {
     marginBottom: theme.spacing.unit * 2,
+    overflowX: 'auto',
   },
 });
 
@@ -39,63 +36,59 @@ const Plan = ({name, maxes, routine, classes}) => (
       {name}
     </Typography>
     {routine.weeks.map(week => (
-      <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography variant="h5" gutterBottom>
-            Week {week.number}
-          </Typography>
-        </ExpansionPanelSummary>
+      <div>
+        <Typography variant="h5" gutterBottom>
+          Week {week.number}
+        </Typography>
 
-        <ExpansionPanelDetails>
-          <div>
-            {week.days.map(day => (
-              <div className={classes.day}>
-                <Typography variant="h6">Day {day.number}</Typography>
-                <Table className={classes.table}>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Exercise</TableCell>
-                      <TableCell>Sets&times;Reps</TableCell>
-                      <TableCell>Weight</TableCell>
-                      <TableCell />
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {day.exercises.map(exercise => {
-                      const {
-                        id,
-                        name,
-                        sets,
-                        reps,
-                        percentage,
-                        amrap,
-                        comments,
-                      } = exercise;
-                      const weight = getWeight(exercise, maxes, percentage);
-                      const amrapSign = amrap ? '+' : '';
-                      const prettyComments = comments
-                        ? ' ' + comments.join(', ')
-                        : '';
-                      const setsCount = exercise.sets || 1;
-                      return (
-                        <TableRow className={classes.row}>
-                          <TableCell>{id}</TableCell>
-                          <TableCell>
-                            {setsCount}&times;{reps}
-                            {amrapSign}
-                          </TableCell>
-                          <TableCell>{weight}</TableCell>
-                          <TableCell>{prettyComments}</TableCell>
-                        </TableRow>
-                      );
-                    })}
-                  </TableBody>
-                </Table>
-              </div>
-            ))}
-          </div>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        <div>
+          {week.days.map(day => (
+            <div className={classes.day}>
+              <Typography variant="h6">Day {day.number}</Typography>
+              <Table className={classes.table}>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Exercise</TableCell>
+                    <TableCell>Sets&times;Reps</TableCell>
+                    <TableCell>Weight</TableCell>
+                    <TableCell />
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {day.exercises.map(exercise => {
+                    const {
+                      id,
+                      name,
+                      sets,
+                      reps,
+                      percentage,
+                      amrap,
+                      comments,
+                    } = exercise;
+                    const weight = getWeight(exercise, maxes, percentage);
+                    const amrapSign = amrap ? '+' : '';
+                    const prettyComments = comments
+                      ? ' ' + comments.join(', ')
+                      : '';
+                    const setsCount = exercise.sets || 1;
+                    return (
+                      <TableRow className={classes.row}>
+                        <TableCell>{id}</TableCell>
+                        <TableCell>
+                          {setsCount}&times;{reps}
+                          {amrapSign}
+                        </TableCell>
+                        <TableCell>{weight}</TableCell>
+                        <TableCell>{prettyComments}</TableCell>
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            </div>
+          ))}
+        </div>
+      </div>
     ))}
   </div>
 );
