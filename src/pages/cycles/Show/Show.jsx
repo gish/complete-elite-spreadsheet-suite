@@ -28,6 +28,10 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 2,
     overflowX: 'auto',
   },
+  week: {
+    maxWidth: 340,
+    margin: '0 auto',
+  },
 });
 
 const Plan = ({name, maxes, routine, classes}) => (
@@ -36,7 +40,7 @@ const Plan = ({name, maxes, routine, classes}) => (
       {name}
     </Typography>
     {routine.weeks.map(week => (
-      <div>
+      <div className={classes.week}>
         <Typography variant="h5" gutterBottom>
           Week {week.number}
         </Typography>
