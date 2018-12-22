@@ -16,40 +16,40 @@
     "days": [{
       "number": 1,
       "exercises": [{
-        "id": "Bench press",
+        "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
         "percentage": 65
       }, {
-        "id": "Bench press",
+        "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
         "percentage": 75
       }, {
-        "id": "Bench press",
+        "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
         "percentage": 85,
         "amrap": true,
         "comments": ["Leave two reps in the tank"]
       }, {
-        "id": "Bench press",
+        "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
         "percentage": 75
       }, {
-        "id": "Bench press",
+        "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
         "percentage": 64,
         "amrap": true
       }, {
-        "id": "Overhead press",
+        "exerciseId": "Overhead press",
         "sets": 5,
         "reps": 10,
         "percentage": 60
       }, {
-        "id": "Barbell rows",
+        "exerciseId": "Barbell rows",
         "sets": 5,
         "reps": 10,
         "percentage": 100
@@ -57,45 +57,45 @@
     }, {
       "number": 2,
       "exercises": [{
-        "id": "Squat",
+        "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,
         "percentage": 65
       }, {
-        "id": "Squat",
+        "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,
         "percentage": 75
       }, {
-        "id": "Squat",
+        "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,
         "percentage": 85,
         "amrap": true,
         "comments": ["Leave two reps in the tank"]
       }, {
-        "id": "Squat",
+        "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,
         "percentage": 75
       }, {
-        "id": "Squat",
+        "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,
         "percentage": 65,
         "amrap": true
       }, {
-        "id": "Romanian deadlifts",
+        "exerciseId": "Romanian deadlifts",
         "sets": 5,
         "reps": 10,
         "percentage": 65
       }, {
-        "id": "Leg extensions",
+        "exerciseId": "Leg extensions",
         "sets": 5,
         "reps": 10,
         "percentage": 100
       }, {
-        "id": "Ab wheel rollouts",
+        "exerciseId": "Ab wheel rollouts",
         "sets": 5,
         "reps": 10,
         "percentage": 100

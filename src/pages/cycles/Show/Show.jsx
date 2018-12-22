@@ -13,7 +13,7 @@ import propTypes from '../../../proptypes';
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 const getWeight = (exercise, trainingMaxes, percentage) => {
   const trainingMax = trainingMaxes.find(
-    trainingMax => trainingMax.id === exercise.id,
+    trainingMax => trainingMax.id === exercise.exerciseId,
   );
   return trainingMax ? mRound((trainingMax.value * percentage) / 100, 2.5) : '';
 };
@@ -61,7 +61,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                 <TableBody>
                   {day.exercises.map(exercise => {
                     const {
-                      id,
+                      exerciseId,
                       name,
                       sets,
                       reps,
@@ -77,7 +77,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                     const setsCount = exercise.sets || 1;
                     return (
                       <TableRow className={classes.row}>
-                        <TableCell padding="none">{id}</TableCell>
+                        <TableCell padding="none">{exerciseId}</TableCell>
                         <TableCell padding="none">
                           {setsCount}&times;{reps}
                           {amrapSign}
