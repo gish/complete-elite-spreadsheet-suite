@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
 import uuidv4 from 'uuid/v4';
+import * as R from 'ramda';
 import {Link} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -12,7 +13,7 @@ import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import * as actions from './../../../state/ducks/cycles/actions';
 import selectRoutines from './../../../state/ducks/routines/selectors';
-import mergeRoutines from './../../../utils/merge-routines';
+import {mergeRoutines, assignIds} from './../../../utils';
 
 const getRoutineById = routines => routineId =>
   routines.find(routine => routine.id === routineId);
@@ -82,9 +83,11 @@ class Create extends React.Component {
 
   onChooseRoutines(selectedRoutineIds) {
     const {routines} = this.props;
-    const mergedRoutines = mergeRoutines(
-      selectedRoutineIds.map(getRoutineById(routines)),
-    );
+    const mergedRoutines = R.pipe(
+      R.map(getRoutineById(routines)),
+      mergeRoutines,
+      assignIds,
+    )(selectedRoutineIds);
     const maxes = getTrainingMaxesByRoutine(mergedRoutines);
     this.setState({selectedRoutineIds, mergedRoutines, maxes});
   }
