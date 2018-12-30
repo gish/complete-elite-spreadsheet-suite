@@ -36,13 +36,39 @@ const assignIdsToDays = cycle => {
   return R.set(weekLens(), weeksWithDaysWithIds, cycle);
 };
 
+const assignIdsTosets = cycle =>
+  R.pipe(
+    R.view(weekLens()),
+    R.defaultTo([]),
+    R.map(week =>
+      R.assoc(
+        'days',
+        R.map(
+          day =>
+            R.assoc(
+              'sets',
+              R.pipe(
+                R.prop('sets'),
+                R.map(R.assoc('id', uuidv4())),
+              )(day),
+            )(day),
+          week.days,
+        ),
+        week,
+      ),
+    ),
+    weeksWithDaysWithIds => R.set(weekLens(), weeksWithDaysWithIds, cycle),
+  )(cycle);
+
 const assigner = {
   week: assignIdsToWeek,
   day: assignIdsToDays,
+  sets: assignIdsTosets,
 };
 const assignIdsTo = (cycle, unit) =>
   R.defaultTo(R.identity, R.prop(unit, assigner))(cycle);
 
-const assignIds = cycle => R.reduce(assignIdsTo, cycle, ['day', 'week']);
+const assignIds = cycle =>
+  R.reduce(assignIdsTo, cycle, ['day', 'week', 'sets']);
 
 export default assignIds;
