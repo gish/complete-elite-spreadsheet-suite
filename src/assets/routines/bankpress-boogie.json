@@ -1,6 +1,6 @@
 {
   "id": "d954ef04-6c06-4df3-8714-bcf3041d2a78",
-  "name": "Bänkpress boogie v1",
+  "name": "Bänkpress boogie 3 days v1",
   "exercises": [{
     "id": "Bench press",
     "name": "Bench press"
@@ -9,7 +9,7 @@
     "number": 1,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -36,7 +36,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 4,
@@ -73,7 +73,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -113,7 +113,7 @@
     "number": 2,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -140,7 +140,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -177,7 +177,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -212,7 +212,7 @@
     "number": 3,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -239,7 +239,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 4,
@@ -276,7 +276,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -326,7 +326,7 @@
     "number": 4,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -353,7 +353,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -390,7 +390,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -430,7 +430,7 @@
     "number": 5,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -457,7 +457,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -484,7 +484,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -524,7 +524,7 @@
     "number": 6,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -547,7 +547,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -570,7 +570,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,

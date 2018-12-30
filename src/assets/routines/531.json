@@ -15,7 +15,7 @@
     "number": 1,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "sets": 1,
         "reps": 5,
@@ -56,7 +56,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Squat",
         "sets": 1,
         "reps": 5,

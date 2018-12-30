@@ -12,7 +12,7 @@
     "number": 1,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "reps": 8,
         "percentage": 65
@@ -45,7 +45,7 @@
       }]
     }, {
       "number": 2,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "reps": 5,
         "percentage": 75
@@ -86,7 +86,7 @@
       }]
     }, {
       "number": 3,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Bench press",
         "reps": 5,
         "percentage": 42.5

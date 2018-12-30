@@ -59,7 +59,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {day.exercises.map(exercise => {
+                  {day.sets.map(exercise => {
                     const {
                       exerciseId,
                       name,

@@ -38,18 +38,18 @@ const findNumberedTime = number => entity =>
     )(entity),
   );
 
-const exerciseByWeekNumberAndDayNumberAndRoutine = weekNumber => dayNumber =>
+const setByWeekNumberAndDayNumberAndRoutine = weekNumber => dayNumber =>
   R.pipe(
     R.propOr([], 'weeks'),
     findNumberedTime(weekNumber),
     R.propOr([], 'days'),
     findNumberedTime(dayNumber),
-    R.propOr([], 'exercises'),
+    R.propOr([], 'sets'),
   );
 
 const mergeDaysByWeekNumberAndDayNumberAndRoutines = weekNumber => dayNumber =>
   R.pipe(
-    R.map(exerciseByWeekNumberAndDayNumberAndRoutine(weekNumber)(dayNumber)),
+    R.map(setByWeekNumberAndDayNumberAndRoutine(weekNumber)(dayNumber)),
     R.reduce(R.concat, []),
   );
 
@@ -59,9 +59,9 @@ const mergeWeeksByWeekNumberAndRoutines = weekNumber => routines =>
     mergeUniqueSorted,
     R.map(dayNumber => ({
       number: dayNumber,
-      exercises: mergeDaysByWeekNumberAndDayNumberAndRoutines(weekNumber)(
-        dayNumber,
-      )(routines),
+      sets: mergeDaysByWeekNumberAndDayNumberAndRoutines(weekNumber)(dayNumber)(
+        routines,
+      ),
     })),
   )(routines);
 

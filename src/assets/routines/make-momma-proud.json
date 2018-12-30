@@ -1,7 +1,7 @@
 {
   "id": "Make momma proud",
   "name": "Make momma proud",
-  "exercises": [{
+  "sets": [{
     "id": "Bench press",
     "name": "Bench press"
   }, {
@@ -12,7 +12,7 @@
     "number": 1,
     "days": [{
       "number": 1,
-      "exercises": [{
+      "sets": [{
         "exerciseId": "Squat",
         "sets": 4,
         "reps": 5,
