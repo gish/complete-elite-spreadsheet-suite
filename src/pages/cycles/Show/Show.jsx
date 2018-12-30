@@ -53,7 +53,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                 <TableHead>
                   <TableRow>
                     <TableCell padding="none">Exercise</TableCell>
-                    <TableCell padding="none">Sets&times;Reps</TableCell>
+                    <TableCell padding="none">Reps</TableCell>
                     <TableCell padding="none">Weight</TableCell>
                     <TableCell padding="none" />
                   </TableRow>
@@ -63,7 +63,6 @@ const Plan = ({name, maxes, routine, classes}) => (
                     const {
                       exerciseId,
                       name,
-                      sets,
                       reps,
                       percentage,
                       amrap,
@@ -74,12 +73,11 @@ const Plan = ({name, maxes, routine, classes}) => (
                     const prettyComments = comments
                       ? ' ' + comments.join(', ')
                       : '';
-                    const setsCount = exercise.sets || 1;
                     return (
                       <TableRow className={classes.row}>
                         <TableCell padding="none">{exerciseId}</TableCell>
                         <TableCell padding="none">
-                          {setsCount}&times;{reps}
+                          {reps}
                           {amrapSign}
                         </TableCell>
                         <TableCell padding="none">{weight}</TableCell>
