@@ -8,7 +8,8 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
-import DoneIcon from '@material-ui/icons/Done';
+import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutlined';
+import CheckBox from '@material-ui/icons/CheckBoxOutlined';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
 
@@ -35,6 +36,9 @@ const styles = theme => ({
     margin: '0 auto',
   },
 });
+
+const CompletedStatus = ({completed}) =>
+  completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
 const Plan = ({cycleId, name, maxes, routine, markSetAsCompleted, classes}) => (
   <div>
@@ -85,7 +89,7 @@ const Plan = ({cycleId, name, maxes, routine, markSetAsCompleted, classes}) => (
                         onClick={markCompleted}
                         key={set.id}>
                         <TableCell padding="none">
-                          {!!completed ? <DoneIcon /> : null}
+                          <CompletedStatus completed={!!completed} />
                         </TableCell>
                         <TableCell padding="none">{exerciseId}</TableCell>
                         <TableCell padding="none">
