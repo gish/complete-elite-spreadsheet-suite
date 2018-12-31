@@ -6,14 +6,13 @@ const weekLens = () => {
   return R.lens(R.path(path), R.assocPath(path));
 };
 
-const assignIdsToWeek = cycle => {
-  const weeksWithIds = R.pipe(
+const assignIdsToWeek = cycle =>
+  R.pipe(
     R.view(weekLens()),
     R.defaultTo([]),
-    R.map(R.assoc('id', uuidv4())),
+    R.map(x => R.assoc('id', uuidv4(), x)),
+    weeks => R.set(weekLens(), weeks, cycle),
   )(cycle);
-  return R.set(weekLens(), weeksWithIds, cycle);
-};
 
 const assignIdsToDays = cycle => {
   const assign = (weeks, week) =>
@@ -22,18 +21,18 @@ const assignIdsToDays = cycle => {
         'days',
         R.pipe(
           R.prop('days'),
-          R.map(R.assoc('id', uuidv4())),
+          R.map(x => R.assoc('id', uuidv4(), x)),
         )(week),
         week,
       ),
       weeks,
     );
-  const weeksWithDaysWithIds = R.pipe(
+  return R.pipe(
     R.view(weekLens()),
     R.defaultTo([]),
     R.reduce(assign, []),
+    weeks => R.set(weekLens(), weeks, cycle),
   )(cycle);
-  return R.set(weekLens(), weeksWithDaysWithIds, cycle);
 };
 
 const assignIdsTosets = cycle =>
@@ -49,7 +48,7 @@ const assignIdsTosets = cycle =>
               'sets',
               R.pipe(
                 R.prop('sets'),
-                R.map(R.assoc('id', uuidv4())),
+                R.map(x => R.assoc('id', uuidv4(), x)),
               )(day),
             )(day),
           week.days,
@@ -57,16 +56,17 @@ const assignIdsTosets = cycle =>
         week,
       ),
     ),
-    weeksWithDaysWithIds => R.set(weekLens(), weeksWithDaysWithIds, cycle),
+    weeks => R.set(weekLens(), weeks, cycle),
   )(cycle);
 
-const assigner = {
+const assigners = {
   week: assignIdsToWeek,
   day: assignIdsToDays,
   sets: assignIdsTosets,
 };
+
 const assignIdsTo = (cycle, unit) =>
-  R.defaultTo(R.identity, R.prop(unit, assigner))(cycle);
+  R.defaultTo(R.identity, R.prop(unit, assigners))(cycle);
 
 const assignIds = cycle =>
   R.reduce(assignIdsTo, cycle, ['day', 'week', 'sets']);

@@ -8,7 +8,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
+import DoneIcon from '@material-ui/icons/Done';
 import propTypes from '../../../proptypes';
+import * as actions from './../../../state/ducks/cycles/actions';
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 const getWeight = (exercise, trainingMaxes, percentage) => {
@@ -34,24 +36,25 @@ const styles = theme => ({
   },
 });
 
-const Plan = ({name, maxes, routine, classes}) => (
+const Plan = ({cycleId, name, maxes, routine, markSetAsCompleted, classes}) => (
   <div>
     <Typography variant="h4" gutterBottom>
       {name}
     </Typography>
     {routine.weeks.map(week => (
-      <div className={classes.week}>
+      <div className={classes.week} key={week.id}>
         <Typography variant="h5" gutterBottom>
           Week {week.number}
         </Typography>
 
         <div>
           {week.days.map(day => (
-            <div className={classes.day}>
+            <div className={classes.day} key={day.id}>
               <Typography variant="h6">Day {day.number}</Typography>
               <Table className={classes.table}>
                 <TableHead>
                   <TableRow>
+                    <TableCell padding="none" />
                     <TableCell padding="none">Exercise</TableCell>
                     <TableCell padding="none">Reps</TableCell>
                     <TableCell padding="none">Weight</TableCell>
@@ -59,7 +62,7 @@ const Plan = ({name, maxes, routine, classes}) => (
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {day.sets.map(exercise => {
+                  {day.sets.map(set => {
                     const {
                       exerciseId,
                       name,
@@ -67,14 +70,23 @@ const Plan = ({name, maxes, routine, classes}) => (
                       percentage,
                       amrap,
                       comments,
-                    } = exercise;
-                    const weight = getWeight(exercise, maxes, percentage);
+                      completed,
+                    } = set;
+                    const weight = getWeight(set, maxes, percentage);
                     const amrapSign = amrap ? '+' : '';
                     const prettyComments = comments
                       ? ' ' + comments.join(', ')
                       : '';
+                    const markCompleted = () =>
+                      markSetAsCompleted(cycleId, week.id, day.id, set.id);
                     return (
-                      <TableRow className={classes.row}>
+                      <TableRow
+                        className={classes.row}
+                        onClick={markCompleted}
+                        key={set.id}>
+                        <TableCell padding="none">
+                          {!!completed ? <DoneIcon /> : null}
+                        </TableCell>
                         <TableCell padding="none">{exerciseId}</TableCell>
                         <TableCell padding="none">
                           {reps}
@@ -106,10 +118,20 @@ const mapStateToProps = (state, ownProps) => {
   const cycle = state.cycles.find(cycle => cycle.id === cycleId);
   const {name, maxes, routine} = cycle;
   return {
+    cycleId,
     name,
     routine,
     maxes,
   };
 };
 
-export default withStyles(styles)(connect(mapStateToProps)(Plan));
+const mapDispatchToProps = {
+  markSetAsCompleted: actions.markSetAsCompleted,
+};
+
+export default withStyles(styles)(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps,
+  )(Plan),
+);
