@@ -3,7 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {withStyles} from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 import IconButton from '@material-ui/core/IconButton';
 import AddIcon from '@material-ui/icons/Add';
 import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
@@ -44,14 +44,13 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
         </ListItem>
       ))}
     </List>
-    <Button
-      variant="fab"
+    <Fab
       color="primary"
       className={classes.createButton}
       component={Link}
       to={`/cycles/create`}>
       <AddIcon />
-    </Button>
+    </Fab>
   </div>
 );
 
