@@ -10,7 +10,13 @@ export const deleteCycle = cycleId => ({
   payload: cycleId,
 });
 
-export const markSetAsCompleted = (cycleId, weekId, dayId, setId) => ({
+export const toggleSetCompleted = (
+  cycleId,
+  weekId,
+  dayId,
+  setId,
+  completed,
+) => ({
   type: types.TOGGLE_SET_COMPLETED,
-  payload: {cycleId, weekId, dayId, setId, completed: true},
+  payload: {cycleId, weekId, dayId, setId, completed},
 });

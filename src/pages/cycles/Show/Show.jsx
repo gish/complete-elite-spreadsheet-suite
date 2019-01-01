@@ -40,7 +40,7 @@ const styles = theme => ({
 const CompletedStatus = ({completed}) =>
   completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
-const Plan = ({cycleId, name, maxes, routine, markSetAsCompleted, classes}) => (
+const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
   <div>
     <Typography variant="h4" gutterBottom>
       {name}
@@ -81,12 +81,24 @@ const Plan = ({cycleId, name, maxes, routine, markSetAsCompleted, classes}) => (
                     const prettyComments = comments
                       ? ' ' + comments.join(', ')
                       : '';
-                    const markCompleted = () =>
-                      markSetAsCompleted(cycleId, week.id, day.id, set.id);
+                    const markCompleted = toggleSetCompleted(
+                      cycleId,
+                      week.id,
+                      day.id,
+                      set.id,
+                      true,
+                    );
+                    const markNotCompleted = toggleSetCompleted(
+                      cycleId,
+                      week.id,
+                      day.id,
+                      set.id,
+                      false,
+                    );
                     return (
                       <TableRow
                         className={classes.row}
-                        onClick={markCompleted}
+                        onClick={!!completed ? markNotCompleted : markCompleted}
                         key={set.id}>
                         <TableCell padding="none">
                           <CompletedStatus completed={!!completed} />
@@ -129,9 +141,13 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-const mapDispatchToProps = {
-  markSetAsCompleted: actions.markSetAsCompleted,
-};
+const mapDispatchToProps = dispatch => ({
+  toggleSetCompleted: (cycleId, weekId, dayId, setId, completed) => () => {
+    dispatch(
+      actions.toggleSetCompleted(cycleId, weekId, dayId, setId, completed),
+    );
+  },
+});
 
 export default withStyles(styles)(
   connect(
