@@ -12,6 +12,7 @@ import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutline
 import CheckBox from '@material-ui/icons/CheckBoxOutlined';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
+import isCompleted, {SET, DAY, WEEK} from './../../../utils/is-completed';
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 const getWeight = (exercise, trainingMaxes, percentage) => {
@@ -45,81 +46,81 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
     <Typography variant="h4" gutterBottom>
       {name}
     </Typography>
-    {routine.weeks.map(week => (
-      <div className={classes.week} key={week.id}>
-        <Typography variant="h5" gutterBottom>
-          Week {week.number}
-        </Typography>
+    {routine.weeks
+      .filter(week => !isCompleted(WEEK, week))
+      .map(week => (
+        <div className={classes.week} key={week.id}>
+          <Typography variant="h5" gutterBottom>
+            Week {week.number}
+          </Typography>
 
-        <div>
-          {week.days.map(day => (
-            <div className={classes.day} key={day.id}>
-              <Typography variant="h6">Day {day.number}</Typography>
-              <Table className={classes.table}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell padding="none" />
-                    <TableCell padding="none">Exercise</TableCell>
-                    <TableCell padding="none">Reps</TableCell>
-                    <TableCell padding="none">Weight</TableCell>
-                    <TableCell padding="none" />
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {day.sets.map(set => {
-                    const {
-                      exerciseId,
-                      name,
-                      reps,
-                      percentage,
-                      amrap,
-                      comments,
-                      completed,
-                    } = set;
-                    const weight = getWeight(set, maxes, percentage);
-                    const amrapSign = amrap ? '+' : '';
-                    const prettyComments = comments
-                      ? ' ' + comments.join(', ')
-                      : '';
-                    const markCompleted = toggleSetCompleted(
-                      cycleId,
-                      week.id,
-                      day.id,
-                      set.id,
-                      true,
-                    );
-                    const markNotCompleted = toggleSetCompleted(
-                      cycleId,
-                      week.id,
-                      day.id,
-                      set.id,
-                      false,
-                    );
-                    return (
-                      <TableRow
-                        className={classes.row}
-                        onClick={!!completed ? markNotCompleted : markCompleted}
-                        key={set.id}>
-                        <TableCell padding="none">
-                          <CompletedStatus completed={!!completed} />
-                        </TableCell>
-                        <TableCell padding="none">{exerciseId}</TableCell>
-                        <TableCell padding="none">
-                          {reps}
-                          {amrapSign}
-                        </TableCell>
-                        <TableCell padding="none">{weight}</TableCell>
-                        <TableCell padding="none">{prettyComments}</TableCell>
+          <div>
+            {week.days
+              .filter(day => !isCompleted(DAY, day))
+              .map(day => (
+                <div className={classes.day} key={day.id}>
+                  <Typography variant="h6">Day {day.number}</Typography>
+                  <Table className={classes.table}>
+                    <TableHead>
+                      <TableRow>
+                        <TableCell padding="none" />
+                        <TableCell padding="none">Exercise</TableCell>
+                        <TableCell padding="none">Reps</TableCell>
+                        <TableCell padding="none">Weight</TableCell>
+                        <TableCell padding="none" />
                       </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </div>
-          ))}
+                    </TableHead>
+                    <TableBody>
+                      {day.sets.map(set => {
+                        const {
+                          exerciseId,
+                          name,
+                          reps,
+                          percentage,
+                          amrap,
+                          comments,
+                        } = set;
+                        const weight = getWeight(set, maxes, percentage);
+                        const amrapSign = amrap ? '+' : '';
+                        const prettyComments = comments
+                          ? ' ' + comments.join(', ')
+                          : '';
+                        const toggleCompleted = toggleSetCompleted(
+                          cycleId,
+                          week.id,
+                          day.id,
+                          set.id,
+                          !isCompleted(SET, set),
+                        );
+                        return (
+                          <TableRow
+                            className={classes.row}
+                            onClick={toggleCompleted}
+                            key={set.id}>
+                            <TableCell padding="none">
+                              <CompletedStatus
+                                completed={isCompleted(SET, set)}
+                              />
+                            </TableCell>
+                            <TableCell padding="none">{exerciseId}</TableCell>
+                            <TableCell padding="none">
+                              {reps}
+                              {amrapSign}
+                            </TableCell>
+                            <TableCell padding="none">{weight}</TableCell>
+                            <TableCell padding="none">
+                              {prettyComments}
+                            </TableCell>
+                          </TableRow>
+                        );
+                      })}
+                    </TableBody>
+                  </Table>
+                </div>
+              ))}
+          </div>
         </div>
-      </div>
-    ))}
+      ))}
   </div>
 );
 
