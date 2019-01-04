@@ -8,26 +8,12 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
-import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutlined';
-import CheckBox from '@material-ui/icons/CheckBoxOutlined';
+import Set from './components/Set';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
 import isCompleted, {SET, DAY, WEEK} from './../../../utils/is-completed';
 
-const mRound = (value, interval) => Math.round(value / interval) * interval;
-const getWeight = (exercise, trainingMaxes, percentage) => {
-  const trainingMax = trainingMaxes.find(
-    trainingMax => trainingMax.id === exercise.exerciseId,
-  );
-  return trainingMax ? mRound((trainingMax.value * percentage) / 100, 2.5) : '';
-};
-
 const styles = theme => ({
-  row: {
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.background.default,
-    },
-  },
   day: {
     marginBottom: theme.spacing.unit * 2,
     overflowX: 'auto',
@@ -37,9 +23,6 @@ const styles = theme => ({
     margin: '0 auto',
   },
 });
-
-const CompletedStatus = ({completed}) =>
-  completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
 const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
   <div>
@@ -71,49 +54,17 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {day.sets.map(set => {
-                        const {
-                          exerciseId,
-                          name,
-                          reps,
-                          percentage,
-                          amrap,
-                          comments,
-                        } = set;
-                        const weight = getWeight(set, maxes, percentage);
-                        const amrapSign = amrap ? '+' : '';
-                        const prettyComments = comments
-                          ? ' ' + comments.join(', ')
-                          : '';
-                        const toggleCompleted = toggleSetCompleted(
-                          cycleId,
-                          week.id,
-                          day.id,
-                          set.id,
-                          !isCompleted(SET, set),
-                        );
-                        return (
-                          <TableRow
-                            className={classes.row}
-                            onClick={toggleCompleted}
-                            key={set.id}>
-                            <TableCell padding="none">
-                              <CompletedStatus
-                                completed={isCompleted(SET, set)}
-                              />
-                            </TableCell>
-                            <TableCell padding="none">{exerciseId}</TableCell>
-                            <TableCell padding="none">
-                              {reps}
-                              {amrapSign}
-                            </TableCell>
-                            <TableCell padding="none">{weight}</TableCell>
-                            <TableCell padding="none">
-                              {prettyComments}
-                            </TableCell>
-                          </TableRow>
-                        );
-                      })}
+                      {day.sets.map(set => (
+                        <Set
+                          key={set.id}
+                          set={set}
+                          cycleId={cycleId}
+                          weekId={week.id}
+                          dayId={day.id}
+                          maxes={maxes}
+                          toggleCompleted={toggleSetCompleted}
+                        />
+                      ))}
                     </TableBody>
                   </Table>
                 </div>
