@@ -1,0 +1,219 @@
+{
+  "id": "79350139-4c6e-4db9-8e31-6c5708900f0b",
+  "name": "Russian squat routine for bench press",
+  "exercises": [
+    {
+      "id": "Bench press",
+      "name": "Bench press"
+    }
+  ],
+  "weeks": [
+    {
+      "number": 1,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 80}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 80}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 80}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 6, "percentage": 80}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
+            {"exerciseId": "Bench press", "reps": 5, "percentage": 85}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
+            {"exerciseId": "Bench press", "reps": 4, "percentage": 90}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 95},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 95},
+            {"exerciseId": "Bench press", "reps": 3, "percentage": 95}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 100},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 100}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+          ]
+        },
+        {
+          "number": 3,
+          "sets": [{"exerciseId": "Bench press", "reps": 1, "percentage": 105}]
+        }
+      ]
+    }
+  ]
+}
