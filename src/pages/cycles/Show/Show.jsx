@@ -54,17 +54,24 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {day.sets.map(set => (
-                        <Set
-                          key={set.id}
-                          set={set}
-                          cycleId={cycleId}
-                          weekId={week.id}
-                          dayId={day.id}
-                          maxes={maxes}
-                          toggleCompleted={toggleSetCompleted}
-                        />
-                      ))}
+                      {day.sets.map(set => {
+                        const toggleCompleted = toggleSetCompleted(
+                          cycleId,
+                          week.id,
+                          day.id,
+                          set.id,
+                          !isCompleted(SET, set),
+                        );
+                        return (
+                          <Set
+                            key={set.id}
+                            set={set}
+                            maxes={maxes}
+                            toggleCompleted={toggleCompleted}
+                            completed={isCompleted(SET, set)}
+                          />
+                        );
+                      })}
                     </TableBody>
                   </Table>
                 </div>

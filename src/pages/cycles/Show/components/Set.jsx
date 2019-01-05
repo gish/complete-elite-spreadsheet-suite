@@ -18,22 +18,15 @@ const mRound = (value, interval) => Math.round(value / interval) * interval;
 const CompletedStatus = ({completed}) =>
   completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
-const Set = ({set, maxes, cycleId, weekId, dayId, toggleCompleted}) => {
+const Set = ({set, completed, maxes, toggleCompleted}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const weight = getWeight(set, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
   const prettyComments = comments ? ' ' + comments.join(', ') : '';
-  const toggleCompletedDefined = toggleCompleted(
-    cycleId,
-    weekId,
-    dayId,
-    set.id,
-    !isCompleted(SET, set),
-  );
   return (
-    <TableRow onClick={toggleCompletedDefined}>
+    <TableRow onClick={toggleCompleted}>
       <TableCell padding="none">
-        <CompletedStatus completed={isCompleted(SET, set)} />
+        <CompletedStatus completed={completed} />
       </TableCell>
       <TableCell padding="none">{exerciseId}</TableCell>
       <TableCell padding="none">
@@ -55,6 +48,7 @@ Set.propTypes = {
     amrap: PropTypes.bool,
     comments: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  completed: PropTypes.bool.isRequired,
   maxes: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -62,9 +56,6 @@ Set.propTypes = {
       value: PropTypes.number.isRequired,
     }),
   ).isRequired,
-  cycleId: PropTypes.string.isRequired,
-  weekId: PropTypes.string.isRequired,
-  dayId: PropTypes.string.isRequired,
   toggleCompleted: PropTypes.func.isRequired,
 };
 
