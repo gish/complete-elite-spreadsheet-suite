@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
+import * as R from 'ramda';
 import Set from './components/Set';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
@@ -29,18 +30,17 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
     <Typography variant="h4" gutterBottom>
       {name}
     </Typography>
-    {routine.weeks
-      .filter(week => !isCompleted(WEEK, week))
-      .map(week => (
+    {R.pipe(
+      R.reject(isCompleted(WEEK)),
+      R.map(week => (
         <div className={classes.week} key={week.id}>
           <Typography variant="h5" gutterBottom>
             Week {week.number}
           </Typography>
-
           <div>
-            {week.days
-              .filter(day => !isCompleted(DAY, day))
-              .map(day => (
+            {R.pipe(
+              R.reject(isCompleted(DAY)),
+              R.map(day => (
                 <div className={classes.day} key={day.id}>
                   <Typography variant="h6">Day {day.number}</Typography>
                   <Table className={classes.table}>
@@ -54,7 +54,7 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {day.sets.map(set => {
+                      {R.map(set => {
                         const toggleCompleted = toggleSetCompleted(
                           cycleId,
                           week.id,
@@ -71,14 +71,16 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
                             completed={isCompleted(SET, set)}
                           />
                         );
-                      })}
+                      }, day.sets)}
                     </TableBody>
                   </Table>
                 </div>
-              ))}
+              )),
+            )(week.days)}
           </div>
         </div>
-      ))}
+      )),
+    )(routine.weeks)}
   </div>
 );
 
