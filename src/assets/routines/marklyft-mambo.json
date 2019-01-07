@@ -1,0 +1,609 @@
+{
+  "id": "09b76f2f-cf0f-4c2b-8d47-144cd48be118",
+  "name": "Marklyft mambo",
+  "exercises": [
+    {
+      "id": "Deadlift",
+      "name": "Deadlift"
+    }
+  ],
+  "weeks": [
+    {
+      "number": 1,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Romanian deadlifts", "reps": 8},
+            {"exerciseId": "Romanian deadlifts", "reps": 8},
+            {"exerciseId": "Romanian deadlifts", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {
+              "exerciseId": "Deadlift",
+              "reps": 5,
+              "percentage": 45,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 4,
+              "percentage": 55,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {"exerciseId": "Goodmornings", "reps": 8},
+            {"exerciseId": "Goodmornings", "reps": 8},
+            {"exerciseId": "Goodmornings", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8},
+            {"exerciseId": "Barbell row", "reps": 8}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {
+              "exerciseId": "Deadlift",
+              "reps": 5,
+              "percentage": 45,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 4,
+              "percentage": 55,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {
+              "exerciseId": "Deadlift",
+              "reps": 5,
+              "percentage": 45,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 4,
+              "percentage": 55,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Goodmornings", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {
+              "exerciseId": "Deadlift",
+              "reps": 5,
+              "percentage": 45,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 4,
+              "percentage": 55,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Romanian deadlifts", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {
+              "exerciseId": "Deadlift",
+              "reps": 5,
+              "percentage": 45,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 4,
+              "percentage": 55,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 3,
+              "percentage": 65,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 75,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 1,
+              "percentage": 80,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 1,
+              "percentage": 80,
+              "comments": ["Paused"]
+            },
+            {
+              "exerciseId": "Deadlift",
+              "reps": 2,
+              "percentage": 70,
+              "comments": ["Paused"]
+            },
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Goodmornings", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12},
+            {"exerciseId": "Barbell row", "reps": 12}
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 85},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 90},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Romanian deadlifts", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10},
+            {"exerciseId": "Barbell row", "reps": 10}
+          ]
+        },
+        {
+          "number": 2,
+          "sets": [
+            {"exerciseId": "Deadlift", "reps": 5, "percentage": 50},
+            {"exerciseId": "Deadlift", "reps": 4, "percentage": 60},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 3, "percentage": 70},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 2, "percentage": 80},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 90},
+            {"exerciseId": "Deadlift", "reps": 1, "percentage": 95},
+            {
+              "exerciseId": "Deadlift",
+              "reps": 1,
+              "percentage": 105,
+              "comments": ["New 1RM attempt"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
