@@ -12,8 +12,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
+import * as R from 'ramda';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
+import isCompleted, {CYCLE} from './../../../utils/is-completed';
 
 const styles = theme => ({
   createButton: {
@@ -29,20 +31,23 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
       Saved cycles
     </Typography>
     <List component="nav">
-      {cycles.map(cycle => (
-        <ListItem
-          component={Link}
-          to={`/cycles/${cycle.id}`}
-          button
-          key={cycle.id}>
-          <ListItemText primary={cycle.name} />
-          <ListItemSecondaryAction>
-            <IconButton onClick={deleteCycle(cycle.id)}>
-              <DeleteOutlinedIcon />
-            </IconButton>
-          </ListItemSecondaryAction>
-        </ListItem>
-      ))}
+      {R.pipe(
+        R.sort((a, b) => (isCompleted(CYCLE, a) ? 1 : 0)),
+        R.map(cycle => (
+          <ListItem
+            component={Link}
+            to={`/cycles/${cycle.id}`}
+            button
+            key={cycle.id}>
+            <ListItemText primary={cycle.name} />
+            <ListItemSecondaryAction>
+              <IconButton onClick={deleteCycle(cycle.id)}>
+                <DeleteOutlinedIcon />
+              </IconButton>
+            </ListItemSecondaryAction>
+          </ListItem>
+        )),
+      )(cycles)}
     </List>
     <Fab
       color="primary"
