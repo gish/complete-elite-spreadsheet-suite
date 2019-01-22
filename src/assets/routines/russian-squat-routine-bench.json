@@ -113,6 +113,10 @@
           "number": 3,
           "sets": [
             {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
+            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
             {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
           ]
         }
