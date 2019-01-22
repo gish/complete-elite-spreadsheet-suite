@@ -32,7 +32,7 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
     </Typography>
     <List component="nav">
       {R.pipe(
-        R.sort((a, b) => (isCompleted(CYCLE, a) ? 1 : 0)),
+        R.sort(a => (isCompleted(CYCLE, a) ? 1 : -1)),
         R.map(cycle => (
           <ListItem
             component={Link}
