@@ -4,15 +4,11 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {withStyles} from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-import IconButton from '@material-ui/core/IconButton';
 import AddIcon from '@material-ui/icons/Add';
-import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import * as R from 'ramda';
+import {Cycle} from './components';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
 import isCompleted, {CYCLE} from './../../../utils/is-completed';
@@ -34,18 +30,12 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
       {R.pipe(
         R.sort(a => (isCompleted(CYCLE, a) ? 1 : -1)),
         R.map(cycle => (
-          <ListItem
-            component={Link}
-            to={`/cycles/${cycle.id}`}
-            button
-            key={cycle.id}>
-            <ListItemText primary={cycle.name} />
-            <ListItemSecondaryAction>
-              <IconButton onClick={deleteCycle(cycle.id)}>
-                <DeleteOutlinedIcon />
-              </IconButton>
-            </ListItemSecondaryAction>
-          </ListItem>
+          <Cycle
+            key={cycle.id}
+            id={cycle.id}
+            name={cycle.name}
+            deleteCycle={deleteCycle}
+          />
         )),
       )(cycles)}
     </List>
