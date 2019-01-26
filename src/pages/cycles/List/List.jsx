@@ -34,6 +34,7 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
             key={cycle.id}
             id={cycle.id}
             name={cycle.name}
+            completed={isCompleted(CYCLE, cycle)}
             deleteCycle={deleteCycle}
           />
         )),
