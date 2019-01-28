@@ -20,7 +20,7 @@ const styles = theme => ({
     overflowX: 'auto',
   },
   week: {
-    maxWidth: 340,
+    maxWidth: 640,
     margin: '0 auto',
   },
 });
