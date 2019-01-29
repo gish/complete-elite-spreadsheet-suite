@@ -27,7 +27,7 @@ const toggleSetCompleted = (state, action) => {
     dayPos,
     'sets',
   ]);
-  const exerciseLens = R.lensPath([
+  const setLens = R.lensPath([
     cyclePos,
     'routine',
     'weeks',
@@ -38,10 +38,10 @@ const toggleSetCompleted = (state, action) => {
     setPos,
   ]);
   const setCompleted = () =>
-    R.mergeRight(R.view(exerciseLens, state), {
+    R.mergeRight(R.view(setLens, state), {
       completed: action.payload.completed,
     });
-  return R.set(exerciseLens, setCompleted(), state);
+  return R.set(setLens, setCompleted(), state);
 };
 
 const reducer = createReducer([])({
