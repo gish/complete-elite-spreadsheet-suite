@@ -2,23 +2,21 @@ import * as R from 'ramda';
 import * as types from './types';
 import {createReducer} from '../../utils';
 
-const toggleSetCompleted = (state, action) => {
+const COMPLETED = 'completed';
+
+const getSetLens = (state, cycleId, weekId, dayId, setId) => {
   const findPos = (state, id, path) =>
     R.findIndex(R.propEq('id', id))(R.path(path, state));
-  const cyclePos = R.findIndex(R.propEq('id', action.payload.cycleId))(state);
-  const weekPos = findPos(state, action.payload.weekId, [
-    cyclePos,
-    'routine',
-    'weeks',
-  ]);
-  const dayPos = findPos(state, action.payload.dayId, [
+  const cyclePos = R.findIndex(R.propEq('id', cycleId))(state);
+  const weekPos = findPos(state, weekId, [cyclePos, 'routine', 'weeks']);
+  const dayPos = findPos(state, dayId, [
     cyclePos,
     'routine',
     'weeks',
     weekPos,
     'days',
   ]);
-  const setPos = findPos(state, action.payload.setId, [
+  const setPos = findPos(state, setId, [
     cyclePos,
     'routine',
     'weeks',
@@ -27,7 +25,7 @@ const toggleSetCompleted = (state, action) => {
     dayPos,
     'sets',
   ]);
-  const setLens = R.lensPath([
+  return R.lensPath([
     cyclePos,
     'routine',
     'weeks',
@@ -37,9 +35,13 @@ const toggleSetCompleted = (state, action) => {
     'sets',
     setPos,
   ]);
+};
+const completeSet = (state, action) => {
+  const {cycleId, weekId, dayId, setId, timestamp} = action.payload;
+  const setLens = getSetLens(state, cycleId, weekId, dayId, setId);
   const setCompleted = () =>
     R.mergeRight(R.view(setLens, state), {
-      completed: action.payload.completed,
+      status: {type: COMPLETED, timestamp},
     });
   return R.set(setLens, setCompleted(), state);
 };
@@ -48,8 +50,7 @@ const reducer = createReducer([])({
   [types.CREATE_CYCLE]: (state, action) => [...state, action.payload],
   [types.DELETE_CYCLE]: (state, action) =>
     state.filter(cycle => cycle.id !== action.payload),
-  [types.TOGGLE_SET_COMPLETED]: (state, action) =>
-    toggleSetCompleted(state, action),
+  [types.COMPLETE_SET]: (state, action) => completeSet(state, action),
 });
 
 export default reducer;

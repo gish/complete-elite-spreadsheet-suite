@@ -1,3 +1,4 @@
 export const CREATE_CYCLE = 'cycles/CREATE';
 export const DELETE_CYCLE = 'cycles/DELETE';
-export const TOGGLE_SET_COMPLETED = 'cycles/TOGGLE_SET_COMPLETED';
+export const COMPLETE_SET = 'cycles/COMPLETE_SET';
+export const DELETE_SET = 'cycles/DELETE_SET';

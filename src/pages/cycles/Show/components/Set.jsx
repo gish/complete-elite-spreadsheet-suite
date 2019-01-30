@@ -18,13 +18,13 @@ const mRound = (value, interval) => Math.round(value / interval) * interval;
 const CompletedStatus = ({completed}) =>
   completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
-const Set = ({set, completed, maxes, toggleCompleted}) => {
+const Set = ({set, completed, maxes, complete}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const weight = getWeight(set, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
   const prettyComments = comments ? ' ' + comments.join(', ') : '';
   return (
-    <TableRow onClick={toggleCompleted}>
+    <TableRow onClick={complete}>
       <TableCell padding="none">
         <CompletedStatus completed={completed} />
       </TableCell>
@@ -56,7 +56,7 @@ Set.propTypes = {
       value: PropTypes.number.isRequired,
     }),
   ).isRequired,
-  toggleCompleted: PropTypes.func.isRequired,
+  complete: PropTypes.func.isRequired,
 };
 
 export default Set;

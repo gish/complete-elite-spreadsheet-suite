@@ -10,13 +10,7 @@ export const deleteCycle = cycleId => ({
   payload: cycleId,
 });
 
-export const toggleSetCompleted = (
-  cycleId,
-  weekId,
-  dayId,
-  setId,
-  completed,
-) => ({
-  type: types.TOGGLE_SET_COMPLETED,
-  payload: {cycleId, weekId, dayId, setId, completed},
+export const completeSet = (cycleId, weekId, dayId, setId, timestamp) => ({
+  type: types.COMPLETE_SET,
+  payload: {cycleId, weekId, dayId, setId, timestamp},
 });

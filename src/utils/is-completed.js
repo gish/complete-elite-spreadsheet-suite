@@ -6,9 +6,9 @@ export const DAY = 'DAY';
 export const SET = 'SET';
 
 const isSetCompleted = R.pipe(
-  R.prop('completed'),
-  R.defaultTo(false),
-  R.equals(true),
+  R.propOr({}, 'status'),
+  R.propOr('', 'type'),
+  R.equals('completed'),
 );
 
 const isDayCompleted = R.pipe(

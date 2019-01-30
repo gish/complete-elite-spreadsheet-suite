@@ -25,7 +25,7 @@ const styles = theme => ({
   },
 });
 
-const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
+const Plan = ({cycleId, name, maxes, routine, completeSet, classes}) => (
   <div>
     <Typography variant="h4" gutterBottom>
       {name}
@@ -55,19 +55,19 @@ const Plan = ({cycleId, name, maxes, routine, toggleSetCompleted, classes}) => (
                     </TableHead>
                     <TableBody>
                       {R.map(set => {
-                        const toggleCompleted = toggleSetCompleted(
+                        const complete = completeSet(
                           cycleId,
                           week.id,
                           day.id,
                           set.id,
-                          !isCompleted(SET, set),
+                          Date.now(),
                         );
                         return (
                           <Set
                             key={set.id}
                             set={set}
                             maxes={maxes}
-                            toggleCompleted={toggleCompleted}
+                            complete={complete}
                             completed={isCompleted(SET, set)}
                           />
                         );
@@ -103,10 +103,8 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  toggleSetCompleted: (cycleId, weekId, dayId, setId, completed) => () => {
-    dispatch(
-      actions.toggleSetCompleted(cycleId, weekId, dayId, setId, completed),
-    );
+  completeSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
+    dispatch(actions.completeSet(cycleId, weekId, dayId, setId, timestamp));
   },
 });
 
