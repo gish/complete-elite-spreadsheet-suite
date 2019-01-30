@@ -25,7 +25,15 @@ const styles = theme => ({
   },
 });
 
-const Plan = ({cycleId, name, maxes, routine, completeSet, classes}) => (
+const Plan = ({
+  cycleId,
+  name,
+  maxes,
+  routine,
+  completeSet,
+  skipSet,
+  classes,
+}) => (
   <div>
     <Typography variant="h4" gutterBottom>
       {name}
@@ -62,12 +70,20 @@ const Plan = ({cycleId, name, maxes, routine, completeSet, classes}) => (
                           set.id,
                           Date.now(),
                         );
+                        const skip = skipSet(
+                          cycleId,
+                          week.id,
+                          day.id,
+                          set.id,
+                          Date.now(),
+                        );
                         return (
                           <Set
                             key={set.id}
                             set={set}
                             maxes={maxes}
                             complete={complete}
+                            skip={skip}
                             completed={isCompleted(SET, set)}
                           />
                         );
@@ -105,6 +121,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
   completeSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
     dispatch(actions.completeSet(cycleId, weekId, dayId, setId, timestamp));
+  },
+  skipSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
+    dispatch(actions.skipSet(cycleId, weekId, dayId, setId, timestamp));
   },
 });
 

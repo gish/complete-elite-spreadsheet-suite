@@ -3,6 +3,7 @@ import * as types from './types';
 import {createReducer} from '../../utils';
 
 const COMPLETED = 'completed';
+const SKIPPED = 'skipped';
 
 const getSetLens = (state, cycleId, weekId, dayId, setId) => {
   const findPos = (state, id, path) =>
@@ -36,21 +37,26 @@ const getSetLens = (state, cycleId, weekId, dayId, setId) => {
     setPos,
   ]);
 };
-const completeSet = (state, action) => {
+
+const updateSetType = (state, action, type) => {
   const {cycleId, weekId, dayId, setId, timestamp} = action.payload;
   const setLens = getSetLens(state, cycleId, weekId, dayId, setId);
-  const setCompleted = () =>
+  const setUpdated = () =>
     R.mergeRight(R.view(setLens, state), {
-      status: {type: COMPLETED, timestamp},
+      status: {type, timestamp},
     });
-  return R.set(setLens, setCompleted(), state);
+  return R.set(setLens, setUpdated(), state);
 };
+
+const completeSet = (state, action) => updateSetType(state, action, COMPLETED);
+const skipSet = (state, action) => updateSetType(state, action, SKIPPED);
 
 const reducer = createReducer([])({
   [types.CREATE_CYCLE]: (state, action) => [...state, action.payload],
   [types.DELETE_CYCLE]: (state, action) =>
     state.filter(cycle => cycle.id !== action.payload),
   [types.COMPLETE_SET]: (state, action) => completeSet(state, action),
+  [types.SKIP_SET]: (state, action) => skipSet(state, action),
 });
 
 export default reducer;

@@ -18,7 +18,7 @@ const mRound = (value, interval) => Math.round(value / interval) * interval;
 const CompletedStatus = ({completed}) =>
   completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
 
-const Set = ({set, completed, maxes, complete}) => {
+const Set = ({set, completed, maxes, complete, skip}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const weight = getWeight(set, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
@@ -57,6 +57,7 @@ Set.propTypes = {
     }),
   ).isRequired,
   complete: PropTypes.func.isRequired,
+  skip: PropTypes.func.isRequired,
 };
 
 export default Set;
