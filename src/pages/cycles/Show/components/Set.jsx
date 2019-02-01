@@ -1,9 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import * as R from 'ramda';
+import Icon from '@material-ui/core/Icon';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutlined';
 import CheckBox from '@material-ui/icons/CheckBoxOutlined';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import {cold} from 'react-hot-loader';
 import isCompleted, {SET} from './../../../../utils/is-completed';
 
 const getWeight = (exercise, trainingMaxes, percentage) => {
@@ -15,18 +22,28 @@ const getWeight = (exercise, trainingMaxes, percentage) => {
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 
-const CompletedStatus = ({completed}) =>
-  completed ? <CheckBox /> : <CheckBoxOutlineBlank />;
-
 const Set = ({set, completed, maxes, complete, skip}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const weight = getWeight(set, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
   const prettyComments = comments ? ' ' + comments.join(', ') : '';
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleMenuClick = event => setAnchorEl(event.currentTarget);
+  const closeMenu = () => setAnchorEl(null);
+  const handleComplete = () => complete() || closeMenu();
+  const handleSkip = () => skip() || closeMenu();
+
   return (
-    <TableRow onClick={complete}>
+    <TableRow>
       <TableCell padding="none">
-        <CompletedStatus completed={completed} />
+        <IconButton onClick={handleMenuClick}>
+          <MenuIcon />
+        </IconButton>
+        <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={closeMenu}>
+          <MenuItem onClick={handleComplete}>Complete</MenuItem>
+          <MenuItem onClick={handleSkip}>Skip</MenuItem>
+        </Menu>
       </TableCell>
       <TableCell padding="none">{exerciseId}</TableCell>
       <TableCell padding="none">
@@ -60,4 +77,4 @@ Set.propTypes = {
   skip: PropTypes.func.isRequired,
 };
 
-export default Set;
+export default cold(Set);

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {hot} from 'react-hot-loader';
+import * as R from 'ramda';
 import {withStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
@@ -48,4 +49,7 @@ const App = ({classes}) => (
   </React.Fragment>
 );
 
-export default withStyles(styles)(hot(module)(App));
+export default R.pipe(
+  withStyles(styles),
+  hot(module),
+)(App);
