@@ -1,9 +1,7 @@
 import * as R from 'ramda';
 import * as types from './types';
+import {COMPLETED, SKIPPED} from './constants';
 import {createReducer} from '../../utils';
-
-const COMPLETED = 'completed';
-const SKIPPED = 'skipped';
 
 const getSetLens = (state, cycleId, weekId, dayId, setId) => {
   const findPos = (state, id, path) =>
