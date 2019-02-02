@@ -60,10 +60,10 @@ const Plan = ({
                   <Table className={classes.table}>
                     <TableHead>
                       <TableRow>
-                        <TableCell padding="none" />
                         <TableCell padding="none">Exercise</TableCell>
                         <TableCell padding="none">Reps</TableCell>
                         <TableCell padding="none">Weight</TableCell>
+                        <TableCell padding="none" />
                         <TableCell padding="none" />
                       </TableRow>
                     </TableHead>

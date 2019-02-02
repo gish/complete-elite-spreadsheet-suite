@@ -50,15 +50,6 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   return (
     <TableRow>
       <TableCell padding="none" className={cellClasses}>
-        <IconButton onClick={handleMenuClick}>
-          <MenuIcon />
-        </IconButton>
-        <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={closeMenu}>
-          <MenuItem onClick={handleComplete}>Complete</MenuItem>
-          <MenuItem onClick={handleSkip}>Skip</MenuItem>
-        </Menu>
-      </TableCell>
-      <TableCell padding="none" className={cellClasses}>
         {exerciseId}
       </TableCell>
       <TableCell padding="none" className={cellClasses}>
@@ -70,6 +61,15 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
       </TableCell>
       <TableCell padding="none" className={cellClasses}>
         {prettyComments}
+      </TableCell>
+      <TableCell padding="none" className={cellClasses}>
+        <IconButton onClick={handleMenuClick}>
+          <MenuIcon />
+        </IconButton>
+        <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={closeMenu}>
+          <MenuItem onClick={handleComplete}>Complete</MenuItem>
+          <MenuItem onClick={handleSkip}>Skip</MenuItem>
+        </Menu>
       </TableCell>
     </TableRow>
   );
