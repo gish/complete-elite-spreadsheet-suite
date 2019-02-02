@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as R from 'ramda';
+import {withStyles} from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -10,8 +11,16 @@ import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutline
 import CheckBox from '@material-ui/icons/CheckBoxOutlined';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import {cold} from 'react-hot-loader';
-import isCompleted, {SET} from './../../../../utils/is-completed';
+import {setConfig, cold} from 'react-hot-loader';
+
+const styles = theme => ({
+  completed: {
+    color: theme.palette.text.disabled,
+  },
+  skipped: {
+    textDecoration: 'line-through',
+  },
+});
 
 const getWeight = (exercise, trainingMaxes, percentage) => {
   const trainingMax = trainingMaxes.find(
@@ -22,7 +31,7 @@ const getWeight = (exercise, trainingMaxes, percentage) => {
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 
-const Set = ({set, completed, maxes, complete, skip}) => {
+const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const weight = getWeight(set, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
@@ -34,9 +43,13 @@ const Set = ({set, completed, maxes, complete, skip}) => {
   const handleComplete = () => complete() || closeMenu();
   const handleSkip = () => skip() || closeMenu();
 
+  const cellClasses = R.join(' ', [
+    skipped ? classes.skipped : '',
+    completed ? classes.completed : '',
+  ]);
   return (
     <TableRow>
-      <TableCell padding="none">
+      <TableCell padding="none" className={cellClasses}>
         <IconButton onClick={handleMenuClick}>
           <MenuIcon />
         </IconButton>
@@ -45,13 +58,19 @@ const Set = ({set, completed, maxes, complete, skip}) => {
           <MenuItem onClick={handleSkip}>Skip</MenuItem>
         </Menu>
       </TableCell>
-      <TableCell padding="none">{exerciseId}</TableCell>
-      <TableCell padding="none">
+      <TableCell padding="none" className={cellClasses}>
+        {exerciseId}
+      </TableCell>
+      <TableCell padding="none" className={cellClasses}>
         {reps}
         {amrapSign}
       </TableCell>
-      <TableCell padding="none">{weight}</TableCell>
-      <TableCell padding="none">{prettyComments}</TableCell>
+      <TableCell padding="none" className={cellClasses}>
+        {weight}
+      </TableCell>
+      <TableCell padding="none" className={cellClasses}>
+        {prettyComments}
+      </TableCell>
     </TableRow>
   );
 };
@@ -76,5 +95,5 @@ Set.propTypes = {
   complete: PropTypes.func.isRequired,
   skip: PropTypes.func.isRequired,
 };
-
-export default cold(Set);
+setConfig({pureSFC: true});
+export default cold(withStyles(styles)(Set));

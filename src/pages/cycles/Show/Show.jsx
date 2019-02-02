@@ -12,7 +12,13 @@ import * as R from 'ramda';
 import Set from './components/Set';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
-import isCompleted, {SET, DAY, WEEK} from './../../../utils/is-completed';
+import {
+  isCompleted,
+  isSkipped,
+  SET,
+  DAY,
+  WEEK,
+} from './../../../utils/is-status-type';
 
 const styles = theme => ({
   day: {
@@ -85,6 +91,7 @@ const Plan = ({
                             complete={complete}
                             skip={skip}
                             completed={isCompleted(SET, set)}
+                            skipped={isSkipped(SET, set)}
                           />
                         );
                       }, day.sets)}
