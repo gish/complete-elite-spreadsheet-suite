@@ -113,6 +113,10 @@
           "number": 3,
           "sets": [
             {"exerciseId": "Squat", "reps": 2, "percentage": 80},
+            {"exerciseId": "Squat", "reps": 2, "percentage": 80},
+            {"exerciseId": "Squat", "reps": 2, "percentage": 80},
+            {"exerciseId": "Squat", "reps": 2, "percentage": 80},
+            {"exerciseId": "Squat", "reps": 2, "percentage": 80},
             {"exerciseId": "Squat", "reps": 2, "percentage": 80}
           ]
         }
