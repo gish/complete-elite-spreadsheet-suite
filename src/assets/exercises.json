@@ -1,1 +1,46 @@
-[{"id": "76773242-c5c6-43f7-855f-cb5b0914c72d", "name": "Bench press"}]
+[
+  {
+    "id": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+    "name": "Bench press"
+  },
+  {
+    "id": "4d3c58ec-5b58-482e-a003-1ec5d8ac485f",
+    "name": "Deadlift"
+  },
+  {
+    "id": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
+    "name": "Squat"
+  },
+  {
+    "id": "4aff1af9-2528-48ea-820a-b85309c815c3",
+    "name": "Overhead press"
+  },
+  {
+    "id": "6a538a54-e8c6-4d8d-84ef-9bec717652dd",
+    "name": "Romanian deadlift"
+  },
+  {
+    "id": "ee845ed6-53dc-4c21-9742-2060bf195563",
+    "name": "Good morning"
+  },
+  {
+    "id": "08bb3c0f-8406-4458-86f5-bdc6c5d1bd57",
+    "name": "Barbell row"
+  },
+  {
+    "id": "412b7d2a-f278-436f-8924-415a18fe422d",
+    "name": "Flyes"
+  },
+  {
+    "id": "9ee0ca14-34ac-407a-840d-8150e12dcd73",
+    "name": "Close grip bench press"
+  },
+  {
+    "id": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
+    "name": "French press"
+  },
+  {
+    "id": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+    "name": "Hip thrust"
+  }
+]
