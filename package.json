@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "npm run build",
     "start": "webpack-dev-server --open --config webpack.dev.js --mode=development --hot",
-    "build": "webpack --mode=production --config webpack.prod.js"
+    "build": "webpack --mode=production --config webpack.prod.js",
+    "add-exercise": "node bin/add-exercise.js"
   },
   "babel": {
     "plugins": ["react-hot-loader/babel"],
