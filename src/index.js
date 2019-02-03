@@ -6,9 +6,10 @@ import App from './App';
 
 const container = document.getElementById('app');
 const routines = __ROUTINES__;
+const exercises = __EXERCISES__;
 
 const Root = () => (
-  <Provider store={store(routines)}>
+  <Provider store={store({routines, exercises})}>
     <App />
   </Provider>
 );
