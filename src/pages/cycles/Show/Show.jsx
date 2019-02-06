@@ -15,6 +15,7 @@ import * as actions from './../../../state/ducks/cycles/actions';
 import {
   isCompleted,
   isSkipped,
+  isDone,
   SET,
   DAY,
   WEEK,
@@ -45,7 +46,7 @@ const Plan = ({
       {name}
     </Typography>
     {R.pipe(
-      R.reject(isCompleted(WEEK)),
+      R.reject(isDone(WEEK)),
       R.map(week => (
         <div className={classes.week} key={week.id}>
           <Typography variant="h5" gutterBottom>
@@ -53,7 +54,7 @@ const Plan = ({
           </Typography>
           <div>
             {R.pipe(
-              R.reject(isCompleted(DAY)),
+              R.reject(isDone(DAY)),
               R.map(day => (
                 <div className={classes.day} key={day.id}>
                   <Typography variant="h6">Day {day.number}</Typography>

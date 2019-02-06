@@ -6,11 +6,11 @@ export const WEEK = 'WEEK';
 export const DAY = 'DAY';
 export const SET = 'SET';
 
-const isSetStatusType = type =>
+const isSetStatusType = types =>
   R.pipe(
     R.propOr({}, 'status'),
     R.propOr('', 'type'),
-    R.equals(type),
+    R.includes(R.__, types),
   );
 
 const isDayStatusType = type =>
@@ -49,7 +49,8 @@ const isStatusType = R.curry((type, unit, period) =>
   )(period),
 );
 
-const isCompleted = isStatusType(COMPLETED);
-const isSkipped = isStatusType(SKIPPED);
+const isCompleted = isStatusType([COMPLETED]);
+const isSkipped = isStatusType([SKIPPED]);
+const isDone = isStatusType([COMPLETED, SKIPPED]);
 
-export {isCompleted, isSkipped};
+export {isCompleted, isSkipped, isDone};

@@ -11,7 +11,7 @@ import * as R from 'ramda';
 import {Cycle} from './components';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
-import {isCompleted, isSkipped, CYCLE} from './../../../utils/is-status-type';
+import {isDone, CYCLE} from './../../../utils/is-status-type';
 
 const styles = theme => ({
   createButton: {
@@ -28,13 +28,13 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
     </Typography>
     <List component="nav">
       {R.pipe(
-        R.sort(a => (isCompleted(CYCLE, a) || isSkipped(CYCLE, a) ? 1 : -1)),
+        R.sort(a => (isDone(CYCLE, a) ? 1 : -1)),
         R.map(cycle => (
           <Cycle
             key={cycle.id}
             id={cycle.id}
             name={cycle.name}
-            completed={isCompleted(CYCLE, cycle)}
+            done={isDone(CYCLE, cycle)}
             deleteCycle={deleteCycle}
           />
         )),

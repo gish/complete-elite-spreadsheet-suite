@@ -8,17 +8,17 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
 
-const typographyColorByCompletion = R.ifElse(
+const typographyColorByDoneness = R.ifElse(
   R.equals(true),
   R.always('textSecondary'),
   R.always('textPrimary'),
 );
 
-const Cycle = ({id, name, completed, deleteCycle}) => (
+const Cycle = ({id, name, done, deleteCycle}) => (
   <ListItem component={Link} to={`/cycles/${id}`} button>
     <ListItemText
       primary={name}
-      primaryTypographyProps={{color: typographyColorByCompletion(completed)}}
+      primaryTypographyProps={{color: typographyColorByDoneness(done)}}
     />
     <ListItemSecondaryAction>
       <IconButton onClick={deleteCycle(id)}>
@@ -31,7 +31,7 @@ const Cycle = ({id, name, completed, deleteCycle}) => (
 Cycle.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  completed: PropTypes.bool.isRequired,
+  done: PropTypes.bool.isRequired,
   deleteCycle: PropTypes.func.isRequired,
 };
 
