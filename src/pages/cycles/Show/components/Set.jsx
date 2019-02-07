@@ -97,15 +97,19 @@ Set.propTypes = {
 };
 setConfig({pureSFC: true});
 
+const memoizeComponent = props => component =>
+  React.memo(component, (prev, next) =>
+    R.all(
+      R.pipe(
+        R.split('.'),
+        path => R.equals(R.path(path, prev), R.path(path, next)),
+      ),
+      props,
+    ),
+  );
+
 export default R.pipe(
-  S =>
-    React.memo(S, (prev, next) => {
-      return (
-        prev.set.id === next.set.id &&
-        prev.completed === next.completed &&
-        prev.skipped === next.skipped
-      );
-    }),
+  memoizeComponent(['set.id', 'completed', 'skipped']),
   withStyles(styles),
   cold,
 )(Set);
