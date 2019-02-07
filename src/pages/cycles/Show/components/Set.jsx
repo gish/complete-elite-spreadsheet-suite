@@ -85,6 +85,7 @@ Set.propTypes = {
     comments: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   completed: PropTypes.bool.isRequired,
+  skipped: PropTypes.bool.isRequired,
   maxes: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
