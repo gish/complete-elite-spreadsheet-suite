@@ -42,7 +42,6 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   const closeMenu = () => setAnchorEl(null);
   const handleComplete = () => complete() || closeMenu();
   const handleSkip = () => skip() || closeMenu();
-
   const cellClasses = R.join(' ', [
     skipped ? classes.skipped : '',
     completed ? classes.completed : '',
@@ -97,4 +96,16 @@ Set.propTypes = {
   skip: PropTypes.func.isRequired,
 };
 setConfig({pureSFC: true});
-export default cold(withStyles(styles)(Set));
+
+export default R.pipe(
+  S =>
+    React.memo(S, (prev, next) => {
+      return (
+        prev.set.id === next.set.id &&
+        prev.completed === next.completed &&
+        prev.skipped === next.skipped
+      );
+    }),
+  withStyles(styles),
+  cold,
+)(Set);
