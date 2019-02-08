@@ -13,7 +13,7 @@ class TrainingMaxSetter extends React.Component {
   change(id) {
     return event => {
       const newMaxValue = Number(event.target.value);
-      const newMaxes = [...this.state.maxes].map(max => {
+      const newMaxes = this.state.maxes.map(max => {
         if (max.id === id) {
           return {...max, value: newMaxValue};
         }
