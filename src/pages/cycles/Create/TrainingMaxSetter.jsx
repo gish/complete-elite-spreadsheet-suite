@@ -17,7 +17,7 @@ class TrainingMaxSetter extends React.Component {
         if (max.id === id) {
           return {...max, value: newMaxValue};
         }
-        return {...max};
+        return max;
       });
       this.setState({maxes: newMaxes});
       this.props.onUpdate(newMaxes);
