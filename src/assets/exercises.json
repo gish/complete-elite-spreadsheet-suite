@@ -29,7 +29,7 @@
   },
   {
     "id": "412b7d2a-f278-436f-8924-415a18fe422d",
-    "name": "Flyes"
+    "name": "Dumbbell flyes"
   },
   {
     "id": "9ee0ca14-34ac-407a-840d-8150e12dcd73",
@@ -42,5 +42,13 @@
   {
     "id": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
     "name": "Hip thrust"
+  },
+  {
+    "id": "06da40d8-2868-45fa-8ebc-fed8af15f90c",
+    "name": "Deadlift, paused"
+  },
+  {
+    "id": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+    "name": "Lunge"
   }
 ]

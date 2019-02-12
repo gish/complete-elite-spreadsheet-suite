@@ -1,12 +1,7 @@
 {
   "id": "79350139-4c6e-4db9-8e31-6c5708900f0b",
   "name": "Russian squat routine for bench press",
-  "exercises": [
-    {
-      "id": "Bench press",
-      "name": "Bench press"
-    }
-  ],
+  "exercises": ["76773242-c5c6-43f7-855f-cb5b0914c72d"],
   "weeks": [
     {
       "number": 1,
@@ -14,34 +9,106 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 3,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         }
       ]
@@ -52,34 +119,106 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 3,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 80
+            }
           ]
         }
       ]
@@ -90,34 +229,106 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 6, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 6,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 3,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         }
       ]
@@ -128,31 +339,91 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 85},
-            {"exerciseId": "Bench press", "reps": 5, "percentage": 85}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 85
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 85
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 85
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 85
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 85
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 3,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 90},
-            {"exerciseId": "Bench press", "reps": 4, "percentage": 90}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 90
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 90
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 90
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 4,
+              "percentage": 90
+            }
           ]
         }
       ]
@@ -163,31 +434,91 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 95},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 95},
-            {"exerciseId": "Bench press", "reps": 3, "percentage": 95}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 95
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 95
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 3,
+              "percentage": 95
+            }
           ]
         },
         {
           "number": 3,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         }
       ]
@@ -198,24 +529,62 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 100},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 100}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 100
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 100
+            }
           ]
         },
         {
           "number": 2,
           "sets": [
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80},
-            {"exerciseId": "Bench press", "reps": 2, "percentage": 80}
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            },
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 2,
+              "percentage": 80
+            }
           ]
         },
         {
           "number": 3,
-          "sets": [{"exerciseId": "Bench press", "reps": 1, "percentage": 105}]
+          "sets": [
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 1,
+              "percentage": 105
+            }
+          ]
         }
       ]
     }

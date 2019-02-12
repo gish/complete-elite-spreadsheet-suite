@@ -12,6 +12,7 @@ import CheckBox from '@material-ui/icons/CheckBoxOutlined';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import {setConfig, cold} from 'react-hot-loader';
+import {getExerciseById} from '../../../../utils';
 
 const styles = theme => ({
   completed: {
@@ -22,9 +23,9 @@ const styles = theme => ({
   },
 });
 
-const getWeight = (exercise, trainingMaxes, percentage) => {
+const getWeight = (exerciseId, trainingMaxes, percentage) => {
   const trainingMax = trainingMaxes.find(
-    trainingMax => trainingMax.id === exercise.exerciseId,
+    trainingMax => trainingMax.id === exerciseId,
   );
   return trainingMax ? mRound((trainingMax.value * percentage) / 100, 2.5) : '';
 };
@@ -33,7 +34,8 @@ const mRound = (value, interval) => Math.round(value / interval) * interval;
 
 const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
-  const weight = getWeight(set, maxes, percentage);
+  const exercise = getExerciseById(exerciseId);
+  const weight = getWeight(exerciseId, maxes, percentage);
   const amrapSign = amrap ? '+' : '';
   const prettyComments = comments ? ' ' + comments.join(', ') : '';
 
@@ -49,7 +51,7 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   return (
     <TableRow>
       <TableCell padding="none" className={cellClasses}>
-        {exerciseId}
+        {exercise.name}
       </TableCell>
       <TableCell padding="none" className={cellClasses}>
         {reps}

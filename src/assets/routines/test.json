@@ -1,0 +1,22 @@
+{
+  "id": "d954ff04-6c06-4df3-8714-bcf3041d2a78",
+  "name": "Test",
+  "exercises": ["76773242-c5c6-43f7-855f-cb5b0914c72d"],
+  "weeks": [
+    {
+      "number": 1,
+      "days": [
+        {
+          "number": 1,
+          "sets": [
+            {
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
+              "reps": 5,
+              "percentage": 53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

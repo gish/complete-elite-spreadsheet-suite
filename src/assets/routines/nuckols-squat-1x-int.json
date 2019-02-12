@@ -1,12 +1,7 @@
 {
   "id": "2575dedd-584d-4bd9-99e1-c71786a50744",
   "name": "Nuckols 28 days squat 1x intermediate",
-  "exercises": [
-    {
-      "id": "Squat",
-      "name": "Squat"
-    }
-  ],
+  "exercises": ["4ceaf0d0-d86b-4e2a-a54d-bcaceef67446"],
   "weeks": [
     {
       "number": 1,
@@ -15,14 +10,14 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "amrap": true,
               "comments": ["Shoot for 10+"]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "comments": [
@@ -30,7 +25,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "comments": [
@@ -38,7 +33,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "comments": [
@@ -46,7 +41,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "comments": [
@@ -54,17 +49,17 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
               ]
             },
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10}
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
           ]
         }
       ]
@@ -75,9 +70,14 @@
         {
           "number": 1,
           "sets": [
-            {"exerciseId": "Squat", "reps": 1, "percentage": 85, "amrap": true},
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
+              "reps": 1,
+              "percentage": 85,
+              "amrap": true
+            },
+            {
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
               "comments": [
@@ -85,7 +85,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
               "comments": [
@@ -93,7 +93,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
               "comments": [
@@ -101,7 +101,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
               "comments": [
@@ -109,19 +109,19 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
               ]
             },
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10}
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
           ]
         }
       ]
@@ -133,14 +133,14 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "amrap": true,
               "comments": ["Shoot for 8+"]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "comments": [
@@ -148,7 +148,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "comments": [
@@ -156,7 +156,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "comments": [
@@ -164,7 +164,7 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "comments": [
@@ -172,21 +172,21 @@
               ]
             },
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
               ]
             },
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Quad-dominant accessory", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10},
-            {"exerciseId": "Hip thrust", "reps": 10}
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
           ]
         }
       ]
@@ -198,16 +198,28 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Squat",
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 105,
               "comments": ["New 1RM"]
             },
-            {"exerciseId": "Squat", "reps": 10, "percentage": 70},
-            {"exerciseId": "Squat", "reps": 10, "percentage": 70},
-            {"exerciseId": "Squat", "reps": 10, "percentage": 70},
-            {"exerciseId": "Quad-dominant accessory", "reps": 15},
-            {"exerciseId": "Hip thrust", "reps": 15}
+            {
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
+              "reps": 10,
+              "percentage": 70
+            },
+            {
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
+              "reps": 10,
+              "percentage": 70
+            },
+            {
+              "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
+              "reps": 10,
+              "percentage": 70
+            },
+            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 15},
+            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 15}
           ]
         }
       ]

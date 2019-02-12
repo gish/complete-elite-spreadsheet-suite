@@ -13,17 +13,20 @@ import RoutineChooser from './RoutineChooser';
 import TrainingMaxSetter from './TrainingMaxSetter';
 import * as actions from './../../../state/ducks/cycles/actions';
 import selectRoutines from './../../../state/ducks/routines/selectors';
-import {mergeRoutines, assignIds} from './../../../utils';
+import {mergeRoutines, assignIds, getExerciseById} from './../../../utils';
 
 const getRoutineById = routines => routineId =>
   routines.find(routine => routine.id === routineId);
 
 const getTrainingMaxesByRoutine = routine =>
-  routine.exercises.map(exercise => ({
-    id: exercise.id,
-    name: exercise.name,
-    value: 0,
-  }));
+  routine.exercises.map(exerciseId => {
+    const exercise = getExerciseById(exerciseId);
+    return {
+      id: exercise.id,
+      name: exercise.name,
+      value: 0,
+    };
+  });
 
 const styles = theme => ({
   layout: {

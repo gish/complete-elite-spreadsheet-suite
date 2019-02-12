@@ -87,7 +87,7 @@ const mergeRoutinesWeeks = routines =>
 const mergeRoutinesExercises = R.pipe(
   R.map(R.defaultTo([], R.prop('exercises'))),
   R.reduce(R.concat, []),
-  R.uniqWith(R.eqBy(R.prop('id'))),
+  R.uniq,
 );
 
 const mergeRoutines = routines => ({

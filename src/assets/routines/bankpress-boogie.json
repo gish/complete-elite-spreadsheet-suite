@@ -1,12 +1,7 @@
 {
   "id": "d954ef04-6c06-4df3-8714-bcf3041d2a78",
   "name": "Bänkpress boogie 3 days v1",
-  "exercises": [
-    {
-      "id": "Bench press",
-      "name": "Bench press"
-    }
-  ],
+  "exercises": ["76773242-c5c6-43f7-855f-cb5b0914c72d"],
   "weeks": [
     {
       "number": 1,
@@ -15,154 +10,154 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8}
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8}
           ]
         },
         {
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 77
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
-            {"exerciseId": "French press", "reps": 10},
-            {"exerciseId": "French press", "reps": 10},
-            {"exerciseId": "French press", "reps": 10},
-            {"exerciseId": "French press", "reps": 10},
-            {"exerciseId": "French press", "reps": 10}
+            {"exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef", "reps": 10},
+            {"exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef", "reps": 10},
+            {"exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef", "reps": 10},
+            {"exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef", "reps": 10},
+            {"exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef", "reps": 10}
           ]
         },
         {
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8},
-            {"exerciseId": "Dumbbell flyes", "reps": 8}
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8},
+            {"exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d", "reps": 8}
           ]
         }
       ]
@@ -174,74 +169,74 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             }
           ]
@@ -250,63 +245,63 @@
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 77
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             }
           ]
@@ -315,58 +310,58 @@
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 58
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 68
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 78
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             }
           ]
@@ -380,94 +375,94 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "sets": 10,
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             }
           ]
@@ -476,63 +471,63 @@
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 77
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 12
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 12
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 12
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 12
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 12
             }
           ]
@@ -541,78 +536,78 @@
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             }
           ]
@@ -626,54 +621,54 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 58
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 68
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 78
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             }
           ]
@@ -682,55 +677,55 @@
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 77
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 80
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             }
           ]
@@ -739,55 +734,55 @@
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             }
           ]
@@ -801,64 +796,64 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 58
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 68
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 78
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 88
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 10
             }
           ]
@@ -867,54 +862,54 @@
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             },
             {
-              "exerciseId": "French press",
+              "exerciseId": "5dd4ce86-39eb-408d-8ac2-45113f24b3ef",
               "reps": 10
             }
           ]
@@ -923,74 +918,74 @@
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             },
             {
-              "exerciseId": "Dumbbell flyes",
+              "exerciseId": "412b7d2a-f278-436f-8924-415a18fe422d",
               "reps": 12
             }
           ]
@@ -1004,37 +999,37 @@
           "number": 1,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 58
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 68
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 78
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             }
@@ -1044,37 +1039,37 @@
           "number": 2,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 53
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 63
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 73
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             }
@@ -1084,48 +1079,48 @@
           "number": 3,
           "sets": [
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
               "percentage": 58
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
               "percentage": 68
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
               "percentage": 78
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 83
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
               "percentage": 88
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 93
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 98
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 102.5,
               "comments": ["New 1RM attempt"]
             },
             {
-              "exerciseId": "Bench press",
+              "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
               "percentage": 85,
               "amrap": "true"
