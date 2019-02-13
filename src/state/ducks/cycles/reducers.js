@@ -1,6 +1,6 @@
 import * as R from 'ramda';
 import * as types from './types';
-import {COMPLETED, SKIPPED} from './constants';
+import {PERFORMED, SKIPPED} from './constants';
 import {createReducer} from '../../utils';
 
 const getSetLens = (state, cycleId, weekId, dayId, setId) => {
@@ -46,14 +46,14 @@ const updateSetType = (state, action, type) => {
   return R.set(setLens, setUpdated(), state);
 };
 
-const completeSet = (state, action) => updateSetType(state, action, COMPLETED);
+const performSet = (state, action) => updateSetType(state, action, PERFORMED);
 const skipSet = (state, action) => updateSetType(state, action, SKIPPED);
 
 const reducer = createReducer([])({
   [types.CREATE_CYCLE]: (state, action) => [...state, action.payload],
   [types.DELETE_CYCLE]: (state, action) =>
     state.filter(cycle => cycle.id !== action.payload),
-  [types.COMPLETE_SET]: (state, action) => completeSet(state, action),
+  [types.PERFORM_SET]: (state, action) => performSet(state, action),
   [types.SKIP_SET]: (state, action) => skipSet(state, action),
 });
 

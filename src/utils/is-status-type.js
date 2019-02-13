@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import {COMPLETED, SKIPPED} from '../state/ducks/cycles/constants';
+import {PERFORMED, SKIPPED} from '../state/ducks/cycles/constants';
 
 export const CYCLE = 'CYCLE';
 export const WEEK = 'WEEK';
@@ -49,8 +49,8 @@ const isStatusType = R.curry((type, unit, period) =>
   )(period),
 );
 
-const isCompleted = isStatusType([COMPLETED]);
+const isPerformed = isStatusType([PERFORMED]);
 const isSkipped = isStatusType([SKIPPED]);
-const isDone = isStatusType([COMPLETED, SKIPPED]);
+const isDone = isStatusType([PERFORMED, SKIPPED]);
 
-export {isCompleted, isSkipped, isDone};
+export {isPerformed, isSkipped, isDone};

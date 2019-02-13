@@ -1,2 +1,2 @@
-export const COMPLETED = 'completed';
+export const PERFORMED = 'performed';
 export const SKIPPED = 'skipped';

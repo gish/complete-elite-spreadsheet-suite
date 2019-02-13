@@ -10,8 +10,8 @@ export const deleteCycle = cycleId => ({
   payload: cycleId,
 });
 
-export const completeSet = (cycleId, weekId, dayId, setId, timestamp) => ({
-  type: types.COMPLETE_SET,
+export const performSet = (cycleId, weekId, dayId, setId, timestamp) => ({
+  type: types.PERFORM_SET,
   payload: {cycleId, weekId, dayId, setId, timestamp},
 });
 

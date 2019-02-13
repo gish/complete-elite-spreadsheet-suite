@@ -13,7 +13,7 @@ import Set from './components/Set';
 import propTypes from '../../../proptypes';
 import * as actions from './../../../state/ducks/cycles/actions';
 import {
-  isCompleted,
+  isPerformed,
   isSkipped,
   isDone,
   SET,
@@ -37,7 +37,7 @@ const Plan = ({
   name,
   maxes,
   routine,
-  completeSet,
+  performSet,
   skipSet,
   classes,
 }) => (
@@ -70,7 +70,7 @@ const Plan = ({
                     </TableHead>
                     <TableBody>
                       {R.map(set => {
-                        const complete = completeSet(
+                        const perform = performSet(
                           cycleId,
                           week.id,
                           day.id,
@@ -89,9 +89,9 @@ const Plan = ({
                             key={set.id}
                             set={set}
                             maxes={maxes}
-                            complete={complete}
+                            perform={perform}
                             skip={skip}
-                            completed={isCompleted(SET, set)}
+                            performed={isPerformed(SET, set)}
                             skipped={isSkipped(SET, set)}
                           />
                         );
@@ -127,8 +127,8 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  completeSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
-    dispatch(actions.completeSet(cycleId, weekId, dayId, setId, timestamp));
+  performSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
+    dispatch(actions.performSet(cycleId, weekId, dayId, setId, timestamp));
   },
   skipSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
     dispatch(actions.skipSet(cycleId, weekId, dayId, setId, timestamp));

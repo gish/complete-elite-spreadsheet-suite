@@ -15,7 +15,7 @@ import {setConfig, cold} from 'react-hot-loader';
 import {getExerciseById} from '../../../../utils';
 
 const styles = theme => ({
-  completed: {
+  performed: {
     color: theme.palette.text.disabled,
   },
   skipped: {
@@ -32,7 +32,7 @@ const getWeight = (exerciseId, trainingMaxes, percentage) => {
 
 const mRound = (value, interval) => Math.round(value / interval) * interval;
 
-const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
+const Set = ({set, maxes, perform, performed, skip, skipped, classes}) => {
   const {exerciseId, reps, percentage, amrap, comments} = set;
   const exercise = getExerciseById(exerciseId);
   const weight = getWeight(exerciseId, maxes, percentage);
@@ -42,11 +42,11 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleMenuClick = event => setAnchorEl(event.currentTarget);
   const closeMenu = () => setAnchorEl(null);
-  const handleComplete = () => complete() || closeMenu();
+  const handlePerform = () => perform() || closeMenu();
   const handleSkip = () => skip() || closeMenu();
   const cellClasses = R.join(' ', [
     skipped ? classes.skipped : '',
-    completed ? classes.completed : '',
+    performed ? classes.performed : '',
   ]);
   return (
     <TableRow>
@@ -68,7 +68,7 @@ const Set = ({set, maxes, complete, completed, skip, skipped, classes}) => {
           <MenuIcon />
         </IconButton>
         <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={closeMenu}>
-          <MenuItem onClick={handleComplete}>Complete</MenuItem>
+          <MenuItem onClick={handlePerform}>Perform</MenuItem>
           <MenuItem onClick={handleSkip}>Skip</MenuItem>
         </Menu>
       </TableCell>
@@ -85,7 +85,7 @@ Set.propTypes = {
     amrap: PropTypes.bool,
     comments: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
-  completed: PropTypes.bool.isRequired,
+  performed: PropTypes.bool.isRequired,
   skipped: PropTypes.bool.isRequired,
   maxes: PropTypes.arrayOf(
     PropTypes.shape({
@@ -94,7 +94,7 @@ Set.propTypes = {
       value: PropTypes.number.isRequired,
     }),
   ).isRequired,
-  complete: PropTypes.func.isRequired,
+  perform: PropTypes.func.isRequired,
   skip: PropTypes.func.isRequired,
 };
 setConfig({pureSFC: true});
@@ -111,7 +111,7 @@ const memoizeComponent = props => component =>
   );
 
 export default R.pipe(
-  memoizeComponent(['set.id', 'completed', 'skipped']),
+  memoizeComponent(['set.id', 'performed', 'skipped']),
   withStyles(styles),
   cold,
 )(Set);
