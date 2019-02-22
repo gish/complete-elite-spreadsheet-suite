@@ -23,6 +23,7 @@ class Routes extends React.Component {
             path={`/cycles/:id(${uuidV4})`}
             component={cyclesPages.Show}
           />
+          <Route exact path={`/routines`} component={routinePages.List} />
           <Route
             exact
             path={`/routines/edit/:id(${uuidV4})`}
