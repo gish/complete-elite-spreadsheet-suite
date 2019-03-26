@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open --config webpack.dev.js --mode=development --hot",
     "build": "webpack --mode=production --config webpack.prod.js",
     "add-exercise": "node bin/add-exercise.js",
-    "lint": "eslint src/**/*.{js,jsx}"
+    "lint": "eslint \"src/**/*.{js,jsx}\""
   },
   "babel": {
     "plugins": ["react-hot-loader/babel"],
