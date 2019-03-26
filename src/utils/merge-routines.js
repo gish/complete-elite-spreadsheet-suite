@@ -1,4 +1,4 @@
-const R = require('ramda');
+import * as R from 'ramda';
 
 const getNumber = prop =>
   R.pipe(
@@ -14,12 +14,6 @@ const mergeUniqueSorted = R.pipe(
   R.uniq,
   R.sort(diff),
 );
-
-const uniqueNumbers = prop =>
-  R.pipe(
-    R.map(getNumber(prop)),
-    mergeUniqueSorted,
-  );
 
 const daysByWeekNumberAndRoutine = weekNumber =>
   R.pipe(

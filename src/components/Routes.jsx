@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import {HashRouter as Router, Route, Link, Redirect} from 'react-router-dom';
+import {HashRouter as Router, Route, Redirect} from 'react-router-dom';
 import {hot} from 'react-hot-loader';
 
 import * as cyclesPages from '../pages/cycles';

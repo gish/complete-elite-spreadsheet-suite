@@ -1,5 +1,5 @@
-const R = require('ramda');
-const uuidv4 = require('uuid/v4');
+import * as R from 'ramda';
+import uuidv4 from 'uuid/v4';
 
 const weekLens = () => {
   const path = ['weeks'];
