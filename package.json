@@ -6,16 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js --mode=development --hot",
     "build": "webpack --mode=production --config webpack.prod.js",
-    "add-exercise": "node bin/add-exercise.js"
+    "add-exercise": "node bin/add-exercise.js",
+    "lint": "eslint src/**/*.{js,jsx}"
   },
   "babel": {
-    "plugins": [
-      "react-hot-loader/babel"
-    ],
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
+    "plugins": ["react-hot-loader/babel"],
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
