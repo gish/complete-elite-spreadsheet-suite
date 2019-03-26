@@ -8,6 +8,8 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     module: 'readonly',
+    __ROUTINES__: 'readonly',
+    __EXERCISES__: 'readonly',
   },
   parser: 'babel-eslint',
   parserOptions: {
