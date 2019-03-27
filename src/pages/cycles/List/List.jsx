@@ -21,7 +21,7 @@ const styles = theme => ({
   },
 });
 
-const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
+const CyclesLister = ({cycles, deleteCycle, classes}) => (
   <div>
     <Typography variant="h4" gutterBottom>
       Saved cycles
@@ -52,6 +52,8 @@ const CyclesLister = ({cycles, onChoose, deleteCycle, classes}) => (
 
 CyclesLister.propTypes = {
   cycles: PropTypes.arrayOf(propTypes.cycle.isRequired),
+  deleteCycle: PropTypes.func.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 const mapDispatchToProps = dispatch => ({

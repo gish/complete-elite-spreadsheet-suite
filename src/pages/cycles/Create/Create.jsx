@@ -30,7 +30,6 @@ const getTrainingMaxesByRoutine = routine =>
 
 const styles = theme => ({
   layout: {
-    width: 'auto',
     display: 'block', // Fix IE 11 issue.
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
@@ -145,6 +144,9 @@ class Create extends React.Component {
 
 Create.propTypes = {
   create: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  routines: PropTypes.array.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({routines: selectRoutines(state)});

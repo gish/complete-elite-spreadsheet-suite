@@ -112,6 +112,10 @@ Plan.propTypes = {
   name: PropTypes.string.isRequired,
   maxes: propTypes.trainingMaxes.isRequired,
   routine: propTypes.routine.isRequired,
+  cycleId: PropTypes.string.isRequired,
+  performSet: PropTypes.func.isRequired,
+  skipSet: PropTypes.func.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {

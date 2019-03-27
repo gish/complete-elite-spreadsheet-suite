@@ -2,13 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import * as R from 'ramda';
 import {withStyles} from '@material-ui/core/styles';
-import Icon from '@material-ui/core/Icon';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
-import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlankOutlined';
-import CheckBox from '@material-ui/icons/CheckBoxOutlined';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import {setConfig, cold} from 'react-hot-loader';
@@ -96,6 +93,7 @@ Set.propTypes = {
   ).isRequired,
   perform: PropTypes.func.isRequired,
   skip: PropTypes.func.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 setConfig({pureSFC: true});
 
