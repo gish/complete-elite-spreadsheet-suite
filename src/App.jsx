@@ -49,6 +49,10 @@ const App = ({classes}) => (
   </React.Fragment>
 );
 
+App.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
 export default R.pipe(
   withStyles(styles),
   hot(module),
