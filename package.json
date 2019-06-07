@@ -10,24 +10,29 @@
     "lint": "eslint \"src/**/*.{js,jsx}\""
   },
   "babel": {
-    "plugins": ["react-hot-loader/babel"],
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "plugins": [
+      "react-hot-loader/babel"
+    ],
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0-beta.49",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "eslint": "^5.15.3",
-    "eslint-plugin-react": "^7.12.4",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
-    "prop-types": "^15.6.1",
+    "prop-types": "^15.7.2",
     "ramda": "^0.26.0",
-    "react": "16.8.1",
-    "react-dom": "16.8.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-hot-loader": "4.6.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
@@ -36,7 +41,7 @@
     "webpack": "4.19.0",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {}
 }
