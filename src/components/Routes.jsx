@@ -23,7 +23,7 @@ const Routes = () => (
       <Route exact path={`/routines`} component={routinePages.List} />
       <Route
         exact
-        path={`/routines/edit/:id(${uuidV4})`}
+        path={`/routines/:id(${uuidV4})/edit`}
         component={routinePages.Edit}
       />
     </div>

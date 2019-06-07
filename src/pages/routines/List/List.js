@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
 import * as R from 'ramda';
+import {Link} from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -22,7 +23,11 @@ const RoutineList = ({routines}) => (
           ),
         ),
         R.map(routine => (
-          <ListItem key={routine.id}>
+          <ListItem
+            button
+            key={routine.id}
+            component={Link}
+            to={`/routines/${routine.id}/edit`}>
             <ListItemText primary={routine.name} />
           </ListItem>
         )),
@@ -34,5 +39,9 @@ const RoutineList = ({routines}) => (
 const mapStateToProps = state => ({
   routines: selectRoutines(state),
 });
+
+RoutineList.propTypes = {
+  routines: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default R.pipe(connect(mapStateToProps))(RoutineList);
