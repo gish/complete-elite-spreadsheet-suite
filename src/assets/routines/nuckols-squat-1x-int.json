@@ -1,7 +1,9 @@
 {
   "id": "2575dedd-584d-4bd9-99e1-c71786a50744",
   "name": "Nuckols 28 days squat 1x intermediate",
-  "exercises": ["4ceaf0d0-d86b-4e2a-a54d-bcaceef67446"],
+  "exercises": [
+    "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446"
+  ],
   "weeks": [
     {
       "number": 1,
@@ -14,7 +16,10 @@
               "reps": 1,
               "percentage": 75,
               "amrap": true,
-              "comments": ["Shoot for 10+"]
+              "comments": [
+                "Shoot for 10+"
+              ],
+              "id": "89eaf51e-df84-4dd0-a0e4-8475d91b4a03"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -22,7 +27,8 @@
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "211b0873-361e-470b-90d1-124c767a3562"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -30,7 +36,8 @@
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "ef2d0443-2e06-4409-93de-2ee0c8c9ac2a"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -38,7 +45,8 @@
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "6772d319-9828-43d0-b1f0-ad34a4654475"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -46,7 +54,8 @@
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "eb1d7ae6-2924-4f94-9be7-ac8e19ebac7b"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -54,15 +63,34 @@
               "percentage": 75,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "00e5f31e-48a1-4f18-ac6d-c8ce4f6baa1c"
             },
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
-          ]
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "9febc662-712c-40e0-85e9-f1db3df63643"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "50eb7c33-fc71-422f-a2b7-cfc33cefb03f"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "479d968a-d296-43d0-ab5f-2511cabcf13b"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "dfa365c3-af64-495a-89d8-afbcd1522839"
+            }
+          ],
+          "id": "77795c94-1a49-4814-b395-88db8fd942fd"
         }
-      ]
+      ],
+      "id": "44576d52-37a9-48a5-b8a9-9003d98d8e7c"
     },
     {
       "number": 2,
@@ -74,7 +102,8 @@
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 85,
-              "amrap": true
+              "amrap": true,
+              "id": "88874673-cec5-41a0-b460-8dc2392cd040"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -82,7 +111,8 @@
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "cdd4f7b4-5e6c-4746-abf0-9fdd3a5cc652"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -90,7 +120,8 @@
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "54febffb-120c-409d-bb71-2b826fdf22de"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -98,7 +129,8 @@
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "9fad6760-af16-4957-894f-64214890ccbf"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -106,7 +138,8 @@
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "4daf5404-598b-47d0-9739-72844908a79f"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -114,17 +147,44 @@
               "percentage": 85,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "9777a0e7-60e6-4139-a6d5-865ed9c3114e"
             },
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
-          ]
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "4fddf495-08bc-436c-b79b-1c8e0605ca24"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "2214df8e-ce76-4c8e-8a37-88d4eb6fe83d"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "76681af3-95d8-4b43-864f-25d774c9d8f0"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "1042f8ae-ee99-4838-8c3a-40ed6c1ebbc9"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "7097f0a6-d947-4a1b-862c-f0e3f611d86a"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "a19f1771-ac6d-46a4-bb92-2aede1069692"
+            }
+          ],
+          "id": "f66a0f6d-7eee-492b-af01-2ce069df2497"
         }
-      ]
+      ],
+      "id": "2bdc28de-2595-4bbf-9149-a1990add1581"
     },
     {
       "number": 3,
@@ -137,7 +197,10 @@
               "reps": 1,
               "percentage": 80,
               "amrap": true,
-              "comments": ["Shoot for 8+"]
+              "comments": [
+                "Shoot for 8+"
+              ],
+              "id": "470424fa-033a-43e4-a3c1-b9b2e47ef959"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -145,7 +208,8 @@
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "11c28654-082b-4b5e-acea-30a78437180d"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -153,7 +217,8 @@
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "7cf8a074-203e-4152-b28c-17caf1df4bd1"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -161,7 +226,8 @@
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "eedc5d02-3ec6-4d05-8759-e3195c8a94e3"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -169,7 +235,8 @@
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "fd6c793b-5000-46f6-9bcb-4bb7aa458df4"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
@@ -177,19 +244,54 @@
               "percentage": 80,
               "comments": [
                 "Subtract two reps from first set and do that many reps"
-              ]
+              ],
+              "id": "122a16ef-0190-4740-83a9-bc46984ec1cb"
             },
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 10}
-          ]
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "54814f20-ef78-41ad-a355-96155b80cce0"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "3414b0ea-9d12-415a-b7b5-06975f67f7ea"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "9d80df94-8b87-4d3c-8150-60df1eaafb9d"
+            },
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 10,
+              "id": "1e3ca30f-39fd-49de-bca9-780f73c15310"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "5e834b13-15a5-4fac-a66c-e3565af3b438"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "643bf96c-dd53-4d0f-ade9-764f761f9e18"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "eaff7ac1-f235-462d-8e77-e5e69a7f0e69"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 10,
+              "id": "9ab6c7d3-ff4b-4643-8d76-cc289aa4a9ff"
+            }
+          ],
+          "id": "107478bf-72eb-4f9a-bdcf-e0c3de4c2bdc"
         }
-      ]
+      ],
+      "id": "df2a0e96-7e85-4ebf-b930-f4bad78c3474"
     },
     {
       "number": 4,
@@ -201,28 +303,44 @@
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 1,
               "percentage": 105,
-              "comments": ["New 1RM"]
+              "comments": [
+                "New 1RM"
+              ],
+              "id": "878fc890-ab4c-4e2a-af49-85d4ba5f5af4"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 10,
-              "percentage": 70
+              "percentage": 70,
+              "id": "7aed6711-1af5-4967-8679-b8d39dbb60a3"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 10,
-              "percentage": 70
+              "percentage": 70,
+              "id": "7ae14a21-49fe-4623-8749-69c76716106b"
             },
             {
               "exerciseId": "4ceaf0d0-d86b-4e2a-a54d-bcaceef67446",
               "reps": 10,
-              "percentage": 70
+              "percentage": 70,
+              "id": "3092b95c-e4f1-4139-b918-274d2574f986"
             },
-            {"exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e", "reps": 15},
-            {"exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491", "reps": 15}
-          ]
+            {
+              "exerciseId": "886df2c0-2db9-4722-a196-5b31c2f68d9e",
+              "reps": 15,
+              "id": "cbe56cd7-76fa-45a4-96ae-c5ac985c2fde"
+            },
+            {
+              "exerciseId": "a147fcad-5fc9-4ab5-b5e4-8de50ca0b491",
+              "reps": 15,
+              "id": "9ccd47cd-3a73-4da7-8e15-591f7468a5a5"
+            }
+          ],
+          "id": "6cbe24a6-6ac7-4ab6-aeb0-4ee04098d835"
         }
-      ]
+      ],
+      "id": "886751a4-0a33-4d70-9363-c792cd1d10a5"
     }
   ]
 }

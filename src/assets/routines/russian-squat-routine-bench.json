@@ -1,7 +1,9 @@
 {
   "id": "79350139-4c6e-4db9-8e31-6c5708900f0b",
   "name": "Russian squat routine for bench press",
-  "exercises": ["76773242-c5c6-43f7-855f-cb5b0914c72d"],
+  "exercises": [
+    "76773242-c5c6-43f7-855f-cb5b0914c72d"
+  ],
   "weeks": [
     {
       "number": 1,
@@ -12,34 +14,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "1912bc48-2d89-4922-90b4-ac472488a2cb"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "d1159396-ff31-4d78-ad39-ed8baa94a7f5"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "2bd26590-000d-422c-b002-22d51a391ff3"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "de8fd9d7-3dd1-4884-bcab-d74d148bd9d5"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "af81ba10-a0e3-4214-a717-46ea2c14f980"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "068ed0bf-8554-47ae-a45c-794e01322a84"
             }
-          ]
+          ],
+          "id": "d53d3b3f-08b6-4138-87bb-fadb0d3704c8"
         },
         {
           "number": 2,
@@ -47,34 +56,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "3ecdca9b-f599-4d9e-ab94-91f79fe1101f"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "a573c5dc-a1e6-451d-90f2-ecbb9be4fd7e"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "6dcf5913-b20c-43a1-868e-3efd5a34dc63"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "e0ef08a8-5554-4c1b-b83b-75f7c742d22f"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "0a6e22bd-82e7-48cf-8bbc-19935f82bbfe"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 80
+              "percentage": 80,
+              "id": "e2d56f2f-620a-4132-9846-2f3c61b9fb34"
             }
-          ]
+          ],
+          "id": "34314358-99d2-477f-aa27-a8ea075b272d"
         },
         {
           "number": 3,
@@ -82,36 +98,44 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "6396dea8-b11e-47fe-8ed2-831dd32569d2"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "741c8728-960f-424c-bd4b-28c8708ed122"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "eb159b68-2094-467e-ba78-966d17c2a8bf"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "177d41f7-f8b6-4354-92bf-3160ef9b3dc6"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "d616f1db-e367-4401-bf79-1bcdaee50a74"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "d3c6a196-bdbf-477f-bd04-64affec55154"
             }
-          ]
+          ],
+          "id": "b2575e96-9875-47b5-86af-f50ab243b3b9"
         }
-      ]
+      ],
+      "id": "030932b3-278d-42f1-8056-78195d6757e3"
     },
     {
       "number": 2,
@@ -122,34 +146,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "67d9207f-c6cb-4259-afc7-8e11de63862d"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "b7954a32-7f32-471b-8756-9c2b66f7ddab"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "83894d6c-13d9-4088-8e17-ae0805c651c7"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "877d134e-51d0-47a5-bd03-6cdb2f370298"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "12c7df7d-ec8e-4957-8e5d-8bcc05080f48"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 80
+              "percentage": 80,
+              "id": "fef55d1e-cbf3-42ac-b19c-258898dc7a3a"
             }
-          ]
+          ],
+          "id": "0cac8afe-d8cf-4abf-ada5-515e6730b8d1"
         },
         {
           "number": 2,
@@ -157,34 +188,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "431ce8fd-b5bd-4692-90b0-e5018c8e1ccf"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "dc2b97fa-9c99-4116-b182-8a7e98f6bd2f"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "157b2b5e-3453-4c84-84b7-18141bac134d"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "902b29c4-f4fc-48c0-94d2-ba0862e01d62"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "35a2d455-29e4-4553-bbc0-a2176e4d621c"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "f09b0927-33a3-476e-b439-f7bb5cf3d9f1"
             }
-          ]
+          ],
+          "id": "9ed0ab8e-bcaa-42f3-9aae-83e9fa86eb88"
         },
         {
           "number": 3,
@@ -192,36 +230,44 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "2419f7de-b6bb-44d8-a9d5-aa0dae2f7866"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "a1f57df9-d669-499e-8fcf-e1791b3621f6"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "d13ecfb7-e93b-4c8d-86df-bfa92021ee8c"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "42331c1d-b55f-48e8-9358-1fad8f17df74"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "7eab4dc1-3000-4f0f-82df-4d00890f401f"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 80
+              "percentage": 80,
+              "id": "37fb9c06-69de-4f22-87f7-2d8ceef006e2"
             }
-          ]
+          ],
+          "id": "7331f82a-521d-4682-bca7-f9dee14fe59b"
         }
-      ]
+      ],
+      "id": "b72af1c8-e958-4503-acc1-5118cfe6e9d1"
     },
     {
       "number": 3,
@@ -232,34 +278,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "acee2b84-a814-42b0-a733-46604f63cdd1"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "71b52f5f-3c8a-4c38-ade2-c071c2bd1f69"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "2bf80aa2-5314-4975-b868-4f9a0d852dc7"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "32986862-ccc5-4368-b89a-94697ac8f67b"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "98ad8187-74ed-4d78-804a-61da39a9f63a"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "6f74f571-fcf5-4caf-a04f-c207405a1b46"
             }
-          ]
+          ],
+          "id": "e1eaac0d-a8f1-41f5-9f51-88b611ada2ec"
         },
         {
           "number": 2,
@@ -267,34 +320,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "0a8d36e2-b1cd-4521-afc7-f20d5897e3d1"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "50af102f-5029-4c4f-9e7e-922eb8a301bb"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "c9ed83f1-7a5a-48ad-bcff-2c77d089357d"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "980ee7b7-bc4e-4fc8-ab9b-68310636c4ef"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "d104e5fe-2557-4e63-83ce-c200cf357d1b"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 6,
-              "percentage": 80
+              "percentage": 80,
+              "id": "c6a082d6-8a60-4cef-a627-249d32bd8bfe"
             }
-          ]
+          ],
+          "id": "4c353871-2a4e-41de-bbb0-e781a2866be5"
         },
         {
           "number": 3,
@@ -302,36 +362,44 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "e2ef3668-980c-42a5-b367-008367ad2932"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "20c6ed5a-6bb2-414e-9b2d-6a57945289a1"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "3a2b652b-bef5-468d-ac44-426870ed625f"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "a3b2ac1c-d693-41b3-9c3b-16a880810d1c"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "ad228e1f-db47-42d7-a2f3-577e1efa0065"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "3018185e-f3b1-4c1a-8c50-c9680d04fd39"
             }
-          ]
+          ],
+          "id": "f27cf92a-91a6-4f02-9970-f1e82ff518b7"
         }
-      ]
+      ],
+      "id": "7fc0ab8c-9168-4056-873b-29f3fe9d650a"
     },
     {
       "number": 4,
@@ -342,29 +410,35 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 85
+              "percentage": 85,
+              "id": "f5c09933-2627-4a83-ba02-53e37fb9454e"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 85
+              "percentage": 85,
+              "id": "9c94f57a-e13f-4637-bbcd-60843440639c"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 85
+              "percentage": 85,
+              "id": "88096405-e4ef-4fd7-af2e-95c0917eaf04"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 85
+              "percentage": 85,
+              "id": "7922a4d0-d6d8-4e4a-841b-c1f3a362e893"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 5,
-              "percentage": 85
+              "percentage": 85,
+              "id": "9a60ee67-dd36-40ed-b51f-695f1491f1d9"
             }
-          ]
+          ],
+          "id": "ecdb0796-cf4e-44e7-bb43-80d10dfdc05d"
         },
         {
           "number": 2,
@@ -372,34 +446,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "c9e350fa-1680-44e4-864c-d10e5bd190c3"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "1d4c0d5b-f0bd-4ba0-8ec3-35c360ad0a7b"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "29c91459-bc1f-4d1c-9b18-5032a0f76df2"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "7a27ede7-1300-4c38-8e31-81d8b2eebcda"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "b2450cbf-39a3-468b-b5c7-cd31e9c79406"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "29bd3b6f-68fd-4175-b441-7500da4b04d7"
             }
-          ]
+          ],
+          "id": "b73ebef6-06ba-486f-bce8-0131141bb701"
         },
         {
           "number": 3,
@@ -407,26 +488,32 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 90
+              "percentage": 90,
+              "id": "5a22bfed-3719-4fa8-9773-f5a98cb40dc8"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 90
+              "percentage": 90,
+              "id": "ccd3a88c-e103-4637-b926-45bbcee61d58"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 90
+              "percentage": 90,
+              "id": "98317688-820f-4ded-8dd9-4acb81b37926"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 4,
-              "percentage": 90
+              "percentage": 90,
+              "id": "b870ad72-2f5c-4f26-b511-e618235e7406"
             }
-          ]
+          ],
+          "id": "3e550bc5-0606-4795-a83c-e61e52fe8b7e"
         }
-      ]
+      ],
+      "id": "39b66d2e-cc98-49a3-b09a-2b92609471d9"
     },
     {
       "number": 5,
@@ -437,34 +524,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "2c00566d-1840-4b67-8b24-3dccbc00fc55"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "8e0a6d79-9d62-481c-b0c3-346c2abb5b65"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "b170c3ae-567a-46aa-8bd2-5abdd6dcbc66"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "bb102b18-400c-4f2c-b936-63b0b85f1230"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "0008206f-7049-4ba0-bc15-88f2c491e7be"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "aa771ab0-8fc4-4609-a39e-1622a352fb4c"
             }
-          ]
+          ],
+          "id": "119dd42a-9097-4e32-9172-e0d8a04fe948"
         },
         {
           "number": 2,
@@ -472,19 +566,23 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 95
+              "percentage": 95,
+              "id": "ab3f7933-094c-4e4b-b54a-490efe8deb73"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 95
+              "percentage": 95,
+              "id": "7aa9aa09-112b-4eab-9291-27c317d2a8da"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 3,
-              "percentage": 95
+              "percentage": 95,
+              "id": "2d43ac87-080e-43f2-b61b-a58710c0703e"
             }
-          ]
+          ],
+          "id": "c8800b04-72f5-4fe5-8c1a-ee421b94663c"
         },
         {
           "number": 3,
@@ -492,36 +590,44 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "7428bb7b-ac92-4d33-b713-e14b0751b4aa"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "eac47ea6-047d-4594-93cb-d528c056d2dc"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "29d14ecb-9c98-4d34-85f6-8bd7118e91dc"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "4cb59d39-9674-4c46-9ac8-e2fc01366232"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "2a52f6a4-cadf-43d8-88da-caa0bc1c892b"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "9605e434-9354-407f-9085-2c5d69f9af9d"
             }
-          ]
+          ],
+          "id": "20fb16e2-871b-49cc-8d8b-0c0fb8c57019"
         }
-      ]
+      ],
+      "id": "87e51a55-0539-416f-b6b8-42cb8d68490e"
     },
     {
       "number": 6,
@@ -532,14 +638,17 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 100
+              "percentage": 100,
+              "id": "4f8b4349-3d6b-45e6-95bc-69568a10114a"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 100
+              "percentage": 100,
+              "id": "1ce82635-78d9-4467-951c-9dd53e96c8e2"
             }
-          ]
+          ],
+          "id": "7b17c20f-409f-42ce-a8dc-f272745ccefe"
         },
         {
           "number": 2,
@@ -547,34 +656,41 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "e7a9dbe1-6782-4744-bf46-c91b88a42857"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "dd0f3351-a9b4-4a1b-ac3f-cddf5e3388b1"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "3a2bccc0-2bcf-4677-9614-3f4ded4eab0b"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "7e8ec6e2-cf18-451b-9297-890ff7039129"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "f366756e-2a20-4c12-8613-b1709490bbe1"
             },
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 2,
-              "percentage": 80
+              "percentage": 80,
+              "id": "36deb251-7be7-493f-839c-37db80db2df7"
             }
-          ]
+          ],
+          "id": "e94f24d7-eac9-4952-89ef-5803ae2461f3"
         },
         {
           "number": 3,
@@ -582,11 +698,14 @@
             {
               "exerciseId": "76773242-c5c6-43f7-855f-cb5b0914c72d",
               "reps": 1,
-              "percentage": 105
+              "percentage": 105,
+              "id": "e436f58f-ec7d-4411-b8ed-485f1372685a"
             }
-          ]
+          ],
+          "id": "bd0ca73b-5e68-4727-91a6-179e78b9273f"
         }
-      ]
+      ],
+      "id": "e3a87f78-f3e2-4f91-b56e-0ce7e15a8f2d"
     }
   ]
 }
