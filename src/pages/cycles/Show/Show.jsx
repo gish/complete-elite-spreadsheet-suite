@@ -131,12 +131,18 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  performSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
-    dispatch(actions.performSet(cycleId, weekId, dayId, setId, timestamp));
-  },
-  skipSet: (cycleId, weekId, dayId, setId, timestamp) => () => {
-    dispatch(actions.skipSet(cycleId, weekId, dayId, setId, timestamp));
-  },
+  performSet: R.thunkify(
+    R.pipe(
+      actions.performSet,
+      dispatch,
+    ),
+  ),
+  skipSet: R.thunkify(
+    R.pipe(
+      actions.skipSet,
+      dispatch,
+    ),
+  ),
 });
 
 export default withStyles(styles)(
