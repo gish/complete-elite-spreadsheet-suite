@@ -33,7 +33,7 @@ const styles = theme => ({
     display: 'block', // Fix IE 11 issue.
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing.unit * 4,
+    padding: theme.spacing(4),
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
@@ -41,14 +41,14 @@ const styles = theme => ({
     width: '90%',
     margin: 0,
 
-    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+    [theme.breakpoints.up(400 + theme.spacing(3) * 2)]: {
       width: 400,
       marginLeft: 'auto',
       marginRight: 'auto',
     },
   },
   fieldWrapper: {
-    marginBottom: theme.spacing.unit * 2,
+    marginBottom: theme.spacing(2),
   },
   buttonWrapper: {
     display: 'flex',

@@ -23,7 +23,7 @@ import {
 
 const styles = theme => ({
   day: {
-    marginBottom: theme.spacing.unit * 2,
+    marginBottom: theme.spacing(2),
     overflowX: 'auto',
   },
   week: {
