@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import uuidv4 from 'uuid/v4';
 import * as R from 'ramda';
@@ -56,91 +56,77 @@ const styles = theme => ({
   },
 });
 
-class Create extends React.Component {
-  constructor(props) {
-    super(props);
-    const selectedRoutineIds = [];
-    const maxes = [];
-    const mergedRoutines = {};
-    this.state = {
-      name: '',
-      maxes,
-      selectedRoutineIds,
-      mergedRoutines,
-    };
-  }
+const Create = ({routines, create, classes, history}) => {
+  const [mergedRoutines, setMergedRoutines] = useState([]);
+  const [selectedRoutineIds, setSelectedRoutineIds] = useState([]);
+  const [maxes, setMaxes] = useState([]);
+  const [name, setName] = useState('');
 
-  changeName(event) {
-    const name = event.target.value;
-    this.setState({name});
-  }
-
-  onSave(event) {
+  const onSave = event => {
     event.preventDefault();
-    const {mergedRoutines, name, maxes} = this.state;
     const id = uuidv4();
-    this.props.create({id, routine: mergedRoutines, name, maxes});
-    this.props.history.push(`/cycles/${id}`);
-  }
+    create({id, routine: mergedRoutines, name, maxes});
+    history.push(`/cycles/${id}`);
+  };
 
-  onChooseRoutines(selectedRoutineIds) {
-    const {routines} = this.props;
+  const onChooseRoutines = ids => {
     const mergedRoutines = R.pipe(
       R.map(getRoutineById(routines)),
       mergeRoutines,
       assignIds,
-    )(selectedRoutineIds);
+    )(ids);
     const maxes = getTrainingMaxesByRoutine(mergedRoutines);
-    this.setState({selectedRoutineIds, mergedRoutines, maxes});
-  }
+    setSelectedRoutineIds(ids);
+    setMergedRoutines(mergedRoutines);
+    R.pipe(
+      getTrainingMaxesByRoutine,
+      setMaxes,
+    )(mergedRoutines);
+  };
 
-  render() {
-    const {maxes, name, selectedRoutineIds} = this.state;
-    const {classes, routines} = this.props;
-    return (
-      <div className={classes.layout}>
-        <Typography variant="h4" gutterBottom>
-          Create cycle
-        </Typography>
-        <form onSubmit={event => this.onSave(event)}>
-          <div className={classes.fieldWrapper}>
-            <TextField
-              label="Cycle name"
-              type="text"
-              value={name}
-              onChange={event => this.changeName(event)}
-              fullWidth
-              required
-            />
-          </div>
-          <div className={classes.fieldWrapper}>
-            <RoutineChooser
-              routines={routines}
-              selectedRoutineIds={selectedRoutineIds}
-              onChoose={routineIds => this.onChooseRoutines(routineIds)}
-            />
-          </div>
-          <div className={classes.fieldWrapper}>
-            <Typography variant="h5">Training maxes</Typography>
-            <TrainingMaxSetter
-              maxes={maxes}
-              onUpdate={maxes => this.setState({maxes})}
-              key={selectedRoutineIds}
-            />
-          </div>
-          <div className={classes.buttonWrapper}>
-            <Button component={Link} to={`/cycles`} color="default">
-              Cancel
-            </Button>
-            <Button type="submit" variant="contained" color="secondary">
-              Create cycle
-            </Button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={classes.layout}>
+      <Typography variant="h4" gutterBottom>
+        Create cycle
+      </Typography>
+      <form onSubmit={onSave}>
+        <div className={classes.fieldWrapper}>
+          <TextField
+            label="Cycle name"
+            type="text"
+            value={name}
+            onChange={event => setName(event.target.value)}
+            fullWidth
+            required
+          />
+        </div>
+        <div className={classes.fieldWrapper}>
+          <RoutineChooser
+            routines={routines}
+            selectedRoutineIds={selectedRoutineIds}
+            onChoose={onChooseRoutines}
+          />
+        </div>
+        <div className={classes.fieldWrapper}>
+          <Typography variant="h5">Training maxes</Typography>
+          <TrainingMaxSetter
+            maxes={maxes}
+            onUpdate={setMaxes}
+            key={selectedRoutineIds}
+          />
+        </div>
+        <div className={classes.buttonWrapper}>
+          <Button component={Link} to={`/cycles`} color="default">
+            Cancel
+          </Button>
+          <Button type="submit" variant="contained" color="secondary">
+            Create cycle
+          </Button>
+        </div>
+      </form>
+    </div>
+  );
+};
 
 Create.propTypes = {
   create: PropTypes.func.isRequired,
